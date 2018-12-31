@@ -179,7 +179,6 @@ int on_trustInterest(const uint8_t* interest, uint32_t interest_size)
 int on_CMDInterest(const uint8_t* interest, uint32_t interest_size)
 {
         printf("Get into on_CMDInterest... Start to decode received Interest\n");
-        blink_led(3);
   //initiate the name prefix of different interest here
         ndn_name_t CMD_prefix;
         char CMD_string[] = "/NDN-IoT/Board1/SD_LED/ON";
@@ -188,10 +187,13 @@ int on_CMDInterest(const uint8_t* interest, uint32_t interest_size)
         ndn_interest_t check_interest;
   int result = ndn_interest_from_block(&check_interest, interest, interest_size);
 
-        if(!ndn_name_compare(&check_interest.name,&CMD_prefix)){
+        if(ndn_name_compare(&check_interest.name,&CMD_prefix)==0){
         printf("Get into on_CMDtInterest... Received command to turn on LED\n");
-    schematrust_flag=1;
-    blink_led(1);
+    
+        if(schematrust_flag){
+    blink_led(2);
+                printf("finish blink led 2");
+                }
   }
 
 
@@ -282,7 +284,7 @@ int main(void) {
   printf("Device bootstrapping: Finished constructing the direct face.\n");
 
   //regeist the prefix to listen for the command of trust policy
-  char schema_string[] = "/NDN-IoT/TrustChange";
+  char schema_string[] = "/NDN-IoT/TrustChange/Board1";
   ndn_name_t schema_prefix;
   ndn_name_from_string(&schema_prefix, schema_string, sizeof(schema_string));
   ndn_direct_face_register_prefix(&schema_prefix, on_trustInterest);
@@ -304,16 +306,6 @@ int main(void) {
     printf("Problem inserting fib entry, error code %d\n", ret);
   }
 
-  //construct interest
-  ndn_interest_t interest;
-  ndn_interest_init(&interest);
-  char name_string[] = "/NDN-IoT/Board2/SD_LED/ON";
-  ndn_name_from_string(&interest.name, name_string, sizeof(name_string));
-  uint8_t interest_block[256] = {0};
-  ndn_encoder_t encoder;
-  encoder_init(&encoder, interest_block, 256);
-  ndn_interest_tlv_encode(&encoder, &interest);
-
   blink_led(3);
 
   // Enter main loop.
@@ -331,14 +323,22 @@ int main(void) {
           if (nrf_gpio_pin_read(BUTTON_3)==0){ // If button 2 is pressed (Active Low)
             //send Interest here
             printf("Button 3 pressed. start to send Interest of turn on LED\n");
+  //construct interest
+  ndn_interest_t interest;
+  ndn_interest_init(&interest);
+  char name_string[] = "/NDN-IoT/Board2/SD_LED/ON";
+  ndn_name_from_string(&interest.name, name_string, sizeof(name_string));
+  uint8_t interest_block[256] = {0};
+  ndn_encoder_t encoder;
+  encoder_init(&encoder, interest_block, 256);
+  ndn_interest_tlv_encode(&encoder, &interest);
+//send interest
               ndn_direct_face_express_interest(&interest.name,
                                    interest_block, encoder.offset,
                                    on_data_callback, on_interest_timeout_callback);
               ndn_face_send(&m_ndn_nrf_ble_face->intf, &interest.name, interest_block, encoder.offset);
               nrf_delay_ms(100); // for debouncing 
           }
-
-     
 //    idle_state_handle();
   }
 }
