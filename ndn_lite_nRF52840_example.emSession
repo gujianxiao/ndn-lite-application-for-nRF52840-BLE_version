@@ -2,7 +2,6 @@
 <session>
  <Bookmarks/>
  <Breakpoints groups="Breakpoints" active_group="Breakpoints">
-  <BreakpointListItem trigger="" line="216" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="4" filename="Application/main.c" useHWbreakpoint="false"/>
   <Exceptions set="MemManage;UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
  </Breakpoints>
  <ExecutionProfileWindow/>
@@ -25,7 +24,6 @@
   <ProjectSessionItem path="ndn_lite_nRF52840_example"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;Application"/>
-  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;Application;app-init-files"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;Application;ndn_standalone"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;Application;ndn_standalone;adaptation"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;Application;ndn_standalone;adaptation;ndn-nrf-ble-adaptation"/>
@@ -40,6 +38,9 @@
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;Application;ndn_standalone;app-support;bootstrapping;secure-sign-on-files;secure-sign-on;variants;basic;security;detail"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;Application;ndn_standalone;app-support;bootstrapping;secure-sign-on-files;secure-sign-on;variants;basic;security;detail;detail-ecc"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;Application;ndn_standalone;app-support;bootstrapping;secure-sign-on-files;secure-sign-on;variants;basic;security;detail;detail-hmac"/>
+  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;Application;ndn_standalone;encode"/>
+  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;Application;ndn_standalone;face"/>
+  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;Application;ndn_standalone;forwarder"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;nRF_BLE"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;nRF_Crypto backend CC310"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;nRF_Crypto backend mbed TLS"/>
@@ -80,11 +81,14 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="218" useTextEdit="1" useBinaryEdit="0" left="0" path="Application/main.c" selected="1" top="191" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="18" y="101" useTextEdit="1" useBinaryEdit="0" left="0" path="Application/app-init-files/app_initialization_functions.h" selected="0" top="82" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="68" y="114" useTextEdit="1" useBinaryEdit="0" left="0" path="Application/main.c" selected="1" top="178" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="101" useTextEdit="1" useBinaryEdit="0" left="0" path="Application/app-init-files/app_initialization_functions.h" selected="0" top="82" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="339" useTextEdit="1" useBinaryEdit="0" left="0" path="../../nRF5_SDK_15.2.0_9412b96/components/libraries/pwr_mgmt/nrf_pwr_mgmt.c" selected="0" top="321" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="548" useTextEdit="1" useBinaryEdit="0" left="0" path="../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/hal/nrf_gpio.h" selected="0" top="531" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="64" useTextEdit="1" useBinaryEdit="0" left="0" path="../../nRF5_SDK_15.2.0_9412b96/components/boards/pca10056.h" selected="0" top="62" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="105" useTextEdit="1" useBinaryEdit="0" left="0" path="Application/ndn_standalone/face/direct-face.c" selected="0" top="87" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="57" useTextEdit="1" useBinaryEdit="0" left="0" path="Application/ndn_standalone/forwarder/face.h" selected="0" top="75" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="11" useTextEdit="1" useBinaryEdit="0" left="0" path="Application/ndn_standalone/encode/interest.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="19" useTextEdit="1" useBinaryEdit="0" left="0" path="Application/ndn_standalone/encode/name.h" selected="0" top="4" codecName="Default"/>
  </Files>
  <ARMCrossStudioWindow activeProject="ndn_lite_nRF52840_example" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>
