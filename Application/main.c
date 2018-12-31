@@ -135,13 +135,13 @@ void m_on_sign_on_completed_callback(enum sign_on_basic_client_nrf_sdk_ble_compl
   printf("Finished encoding the ndn interest.\n");
   APP_LOG_HEX("Encoded interest:", interest_encoder.output_value, interest_encoder.offset);
 
-  // Express the encoded interest for the certificate.
-  ndn_direct_face_express_interest(
-      &dummy_interest_name,
-      interest_encoder.output_value,
-      interest_encoder.offset,
-      m_on_data_callback,
-      m_interest_timeout_callback);
+//  // Express the encoded interest for the certificate.
+//  ndn_direct_face_express_interest(
+//      &dummy_interest_name,
+//      interest_encoder.output_value,
+//      interest_encoder.offset,
+//      m_on_data_callback,
+//      m_interest_timeout_callback);
 }
 
 int on_trustInterest(const uint8_t* interest, uint32_t interest_size)
@@ -196,6 +196,8 @@ int on_CMDInterest(const uint8_t* interest, uint32_t interest_size)
                 }
 	}
 
+        blink_led(1);
+
 
 }
 
@@ -221,6 +223,8 @@ on_data_callback(const uint8_t* data, uint32_t data_size)
 /**@brief Function for application main entry.
  */
 int main(void) {
+
+    printf("Entered main function of main_board1.c\n");
 
 //initialize the button and LED
     nrf_gpio_cfg_output(BSP_LED_0); //BSP_LED_0 is pin 13 in the nRF52840-DK. Configure pin 13 as standard output. 

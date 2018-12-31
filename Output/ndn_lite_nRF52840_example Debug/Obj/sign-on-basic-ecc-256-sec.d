@@ -1,9 +1,9 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/sign-on-basic-ecc-256-sec.o: \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/variants/ecc_256/sign-on-basic-ecc-256-sec.c \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/variants/ecc_256/sign-on-basic-ecc-256-sec.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdint.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stddef.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/__crossworks.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/variants/ecc_256/../../security/sign-on-basic-sec-consts.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/variants/ecc_256/../../security/detail/sec-impl.h \
- Application/ndn_standalone/security/ndn-lite-default-back/micro-ecc/uECC.h
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\variants\ecc_256\sign-on-basic-ecc-256-sec.c \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\variants\ecc_256\sign-on-basic-ecc-256-sec.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdint.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stddef.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\sign-on-basic-sec-consts.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\sec-impl.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\security\sec-lib\micro-ecc\uecc.h

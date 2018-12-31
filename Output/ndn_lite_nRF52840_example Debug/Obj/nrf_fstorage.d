@@ -1,15 +1,15 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf_fstorage.o: \
- /home/bo/nRF5_SDK_15.2.0_9412b96/components/libraries/fstorage/nrf_fstorage.c \
+ C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\fstorage\nrf_fstorage.c \
  Application/sdk_config.h \
- /home/bo/nRF5_SDK_15.2.0_9412b96/components/libraries/fstorage/nrf_fstorage.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdint.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdbool.h \
+ C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\fstorage\nrf_fstorage.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdint.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdbool.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_errors.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/nrf_error.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/experimental_section_vars/nrf_section.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nordic_common.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stddef.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/__crossworks.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stddef.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_macros.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nrf_assert.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf.h \
@@ -26,7 +26,7 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf_fstorage.o: \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/compiler_abstraction.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_common.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/string.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/string.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nordic_common.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/compiler_abstraction.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_os.h \

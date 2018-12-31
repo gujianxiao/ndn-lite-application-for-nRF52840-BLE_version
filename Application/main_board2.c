@@ -193,6 +193,8 @@ int on_CMDInterest(const uint8_t* interest, uint32_t interest_size)
         if(schematrust_flag){
         blink_led(2);
         }
+
+        blink_led(1);
   }
 
 
@@ -220,6 +222,8 @@ on_data_callback(const uint8_t* data, uint32_t data_size)
 /**@brief Function for application main entry.
  */
 int main(void) {
+
+  printf("Entered main function of main_board2.c\n");
 
 //initialize the button and LED
     nrf_gpio_cfg_output(BSP_LED_0); //BSP_LED_0 is pin 13 in the nRF52840-DK. Configure pin 13 as standard output. 

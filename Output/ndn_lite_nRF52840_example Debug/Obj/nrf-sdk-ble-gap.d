@@ -1,10 +1,10 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-gap.o: \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-gap/nrf-sdk-ble-gap.c \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-gap/nrf-sdk-ble-gap.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-gap/nrf-sdk-ble-gap-defs.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-gap\nrf-sdk-ble-gap.c \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-gap\nrf-sdk-ble-gap.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-gap\nrf-sdk-ble-gap-defs.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/ble/common/ble_conn_state.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdbool.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdint.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdbool.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdint.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/ble.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/nrf_svc.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/nrf_error.h \
@@ -32,8 +32,8 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-gap.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/ble_gap.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/atomic/nrf_atomic.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_common.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/string.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/__crossworks.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/string.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h \
  Application/sdk_config.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nordic_common.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/compiler_abstraction.h \
@@ -41,13 +41,13 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-gap.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_errors.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/nrf_error.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_util.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stddef.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stddef.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_macros.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nrf_assert.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-gap/../nrf-sdk-ble-consts.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-gap/../nrf-sdk-ble-error-check.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-gap/../logger.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdio.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-consts.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-error-check.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\logger.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdio.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/experimental_section_vars/nrf_section.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nordic_common.h \

@@ -1,18 +1,18 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/app_error_handler_gcc.o: \
- /home/bo/nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_error_handler_gcc.c \
- /home/bo/nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_common.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdint.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdbool.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/string.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/__crossworks.h \
+ C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\util\app_error_handler_gcc.c \
+ C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\util\sdk_common.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdint.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdbool.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/string.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h \
  Application/sdk_config.h \
- /home/bo/nRF5_SDK_15.2.0_9412b96/components/libraries/util/nordic_common.h \
+ C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\util\nordic_common.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/compiler_abstraction.h \
- /home/bo/nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_os.h \
- /home/bo/nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_errors.h \
+ C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\util\sdk_os.h \
+ C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\util\sdk_errors.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/nrf_error.h \
- /home/bo/nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_util.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stddef.h \
+ C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\util\app_util.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stddef.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf52840.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/toolchain/cmsis/include/core_cm4.h \
@@ -25,8 +25,8 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/app_error_handler_gcc.o: \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf51_to_nrf52840.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf52_to_nrf52840.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/compiler_abstraction.h \
- /home/bo/nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_macros.h \
- /home/bo/nRF5_SDK_15.2.0_9412b96/components/libraries/util/nrf_assert.h \
- /home/bo/nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_error.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdio.h \
- /home/bo/nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_error_weak.h
+ C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\util\sdk_macros.h \
+ C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\util\nrf_assert.h \
+ C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\util\app_error.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdio.h \
+ C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\util\app_error_weak.h

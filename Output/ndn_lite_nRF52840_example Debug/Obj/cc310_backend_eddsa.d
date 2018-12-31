@@ -1,13 +1,13 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/cc310_backend_eddsa.o: \
- /home/bo/nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/backend/cc310/cc310_backend_eddsa.c \
+ C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\backend\cc310\cc310_backend_eddsa.c \
  Application/sdk_config.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nordic_common.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdint.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdbool.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/string.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/__crossworks.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdint.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdbool.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/string.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto_ecc.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stddef.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stddef.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto_error.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_errors.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/nrf_error.h \
@@ -71,9 +71,9 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/cc310_backend_eddsa.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/backend/cc310/cc310_backend_eddsa.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto_eddsa_shared.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/backend/oberon/oberon_backend_eddsa.h \
- /home/bo/nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/backend/cc310/cc310_backend_ecc.h \
- /home/bo/nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/backend/cc310/cc310_backend_shared.h \
- /home/bo/nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/backend/cc310/cc310_backend_mutex.h \
+ C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\backend\cc310\cc310_backend_ecc.h \
+ C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\backend\cc310\cc310_backend_shared.h \
+ C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\backend\cc310\cc310_backend_mutex.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/mutex/nrf_mtx.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/atomic/nrf_atomic.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nrf_assert.h \

@@ -1,16 +1,16 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/aes-nrf-crypto-impl.o: \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/security/detail/detail-aes/aes-nrf-crypto-impl.c \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/security/detail/detail-aes/aes-nrf-crypto-impl.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/ctype.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/__crossworks.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdbool.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stddef.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/__crossworks.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdio.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-aes\aes-nrf-crypto-impl.c \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-aes\aes-nrf-crypto-impl.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/ctype.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdbool.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stddef.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdio.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf52840.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/toolchain/cmsis/include/core_cm4.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdint.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdint.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/toolchain/cmsis/include/core_cmInstr.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/toolchain/cmsis/include/cmsis_gcc.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/toolchain/cmsis/include/core_cmFunc.h \
@@ -65,7 +65,7 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/aes-nrf-crypto-impl.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/boards/pca10056.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/mem_manager/mem_manager.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_common.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/string.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/string.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_os.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_util.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_macros.h \
@@ -179,4 +179,4 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/aes-nrf-crypto-impl.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/backend/cc310/cc310_backend_eddsa.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto_eddsa_shared.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/backend/oberon/oberon_backend_eddsa.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/security/detail/detail-aes/../../sign-on-basic-sec-consts.h
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\sign-on-basic-sec-consts.h

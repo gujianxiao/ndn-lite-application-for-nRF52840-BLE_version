@@ -1,14 +1,14 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-conn-params.o: \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-conn-params/nrf-sdk-ble-conn-params.c \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-conn-params/nrf-sdk-ble-conn-params.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-conn-params/nrf-sdk-ble-conn-params-defs.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-conn-params\nrf-sdk-ble-conn-params.c \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-conn-params\nrf-sdk-ble-conn-params.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-conn-params\nrf-sdk-ble-conn-params-defs.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/timer/app_timer.h \
  Application/sdk_config.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_error.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdint.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdio.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/__crossworks.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdbool.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdint.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdio.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdbool.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf52840.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/toolchain/cmsis/include/core_cm4.h \
@@ -26,7 +26,7 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-conn-params.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nordic_common.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_error_weak.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_util.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stddef.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stddef.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/compiler_abstraction.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nordic_common.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/ble/common/ble_conn_params.h \
@@ -47,10 +47,10 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-conn-params.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/ble_gap.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/ble_gatt.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_errors.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/string.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-conn-params/../nrf-sdk-ble-consts.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-conn-params/../nrf-sdk-ble-error-check.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-conn-params/../logger.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/string.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-consts.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-error-check.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\logger.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_common.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_os.h \
@@ -63,4 +63,4 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-conn-params.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_instance.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_types.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_types.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-conn-params/../logger.h
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\logger.h

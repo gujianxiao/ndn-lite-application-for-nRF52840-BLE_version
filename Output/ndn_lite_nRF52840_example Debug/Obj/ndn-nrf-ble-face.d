@@ -1,28 +1,28 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/ndn-nrf-ble-face.o: \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/ndn-nrf-ble-face.c \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/ndn-nrf-ble-face.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../forwarder/forwarder.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../forwarder/pit.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../forwarder/../encode/interest.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../forwarder/../encode/name.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../forwarder/../encode/name-component.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../forwarder/../encode/tlv.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../forwarder/../encode/decoder.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../forwarder/../encode/encoder.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../forwarder/../encode/../ndn-constants.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../forwarder/../encode/../ndn-error-code.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../forwarder/../encode/../ndn-enums.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/inttypes.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdint.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/string.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/__crossworks.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdbool.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../forwarder/../encode/signature.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../forwarder/../encode/../security/crypto-key.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../forwarder/../encode/../security/../encode/name.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../forwarder/face.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../forwarder/../encode/name.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../forwarder/fib.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone\face\ndn-nrf-ble-face.c \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone\face\ndn-nrf-ble-face.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\forwarder\forwarder.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\forwarder\pit.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\encode\interest.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\encode\name.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\encode\name-component.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\encode\tlv.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\encode\decoder.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\encode\encoder.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\ndn-constants.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\ndn-error-code.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\ndn-enums.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/inttypes.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdint.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/string.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdbool.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\encode\signature.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\security\ndn-lite-crypto-key.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\encode\name.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\forwarder\face.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\encode\name.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\forwarder\fib.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/ble.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/nrf_svc.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/nrf_error.h \
@@ -47,20 +47,17 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/ndn-nrf-ble-face.o: \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf52_to_nrf52840.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/compiler_abstraction.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/ble_gatts.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-ndn-lite-ble-unicast-transport/nrf-sdk-ble-ndn-lite-ble-unicast-transport.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-advertising/nrf-sdk-ble-adv-defs.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../encode/data.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../encode/signature.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../encode/metainfo.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../encode/name.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../encode/../security/crypto-key.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdio.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-ndn-lite-ble-unicast-transport\nrf-sdk-ble-ndn-lite-ble-unicast-transport.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-advertising\nrf-sdk-ble-adv-defs.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\encode\data.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\encode\metainfo.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdio.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/delay/nrf_delay.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/nrfx.h \
  ../../nRF5_SDK_15.2.0_9412b96/integration/nrfx/nrfx_config.h \
  Application/sdk_config.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/drivers/nrfx_common.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stddef.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stddef.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf_peripherals.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf52840_peripherals.h \
  ../../nRF5_SDK_15.2.0_9412b96/integration/nrfx/nrfx_glue.h \
@@ -86,7 +83,7 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/ndn-nrf-ble-face.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_resources.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/nrf_sd_def.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/drivers/nrfx_errors.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-advertising/nrf-sdk-ble-adv.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-consts.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-scanning/nrf-sdk-ble-scan.h \
- /home/bo/ndn-lite-android-support-library-master/nRF52840_example/Application/ndn_standalone/face/../adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-stack/nrf-sdk-ble-stack.h
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-advertising\nrf-sdk-ble-adv.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-consts.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-scanning\nrf-sdk-ble-scan.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-stack\nrf-sdk-ble-stack.h

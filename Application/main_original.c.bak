@@ -148,30 +148,30 @@ int on_trustInterest(const uint8_t* interest, uint32_t interest_size)
 {
         printf("Get into on_trustInterest... Start to decode received Interest\n");
         blink_led(3);
-  //initiate the name prefix of different interest here
+	//initiate the name prefix of different interest here
         ndn_name_t schema_prefix;
         ndn_name_t schema_prefix2;
         char schema_string[] = "/NDN-IoT/TrustChange/Board1/ControllerOnly";
         char schema_string2[] = "/NDN-IoT/TrustChange/Board1/AllNode";
-    ndn_name_from_string(&schema_prefix, schema_string, sizeof(schema_string));
+  	ndn_name_from_string(&schema_prefix, schema_string, sizeof(schema_string));
         ndn_name_from_string(&schema_prefix2, schema_string2, sizeof(schema_string2));
 
         ndn_interest_t check_interest;
-  int result = ndn_interest_from_block(&check_interest, interest, interest_size);
+	int result = ndn_interest_from_block(&check_interest, interest, interest_size);
         printf("compare results of controller only: %d\n",ndn_name_compare(&schema_prefix,&check_interest.name));
         printf("compare results of all nodes: %d\n",ndn_name_compare(&schema_prefix2,&check_interest.name));
 
         if(ndn_name_compare(&check_interest.name,&schema_prefix)==0){
         printf("Get into on_trustInterest... Trust policy change to controller\n");
-    schematrust_flag=0;
-    blink_led(4);
-  }
+		schematrust_flag=0;
+		blink_led(4);
+	}
 
         if(ndn_name_compare(&check_interest.name,&schema_prefix2)==0){
         printf("Get into on_trustInterest... Trust policy change to all nodes\n");
-    schematrust_flag=1;
-    blink_led(4);
-  }
+		schematrust_flag=1;
+		blink_led(4);
+	}
 
 
 }
@@ -179,22 +179,22 @@ int on_trustInterest(const uint8_t* interest, uint32_t interest_size)
 int on_CMDInterest(const uint8_t* interest, uint32_t interest_size)
 {
         printf("Get into on_CMDInterest... Start to decode received Interest\n");
-  //initiate the name prefix of different interest here
+	//initiate the name prefix of different interest here
         ndn_name_t CMD_prefix;
         char CMD_string[] = "/NDN-IoT/Board1/SD_LED/ON";
         ndn_name_from_string(&CMD_prefix, CMD_string, sizeof(CMD_string));
 
         ndn_interest_t check_interest;
-  int result = ndn_interest_from_block(&check_interest, interest, interest_size);
+	int result = ndn_interest_from_block(&check_interest, interest, interest_size);
 
         if(ndn_name_compare(&check_interest.name,&CMD_prefix)==0){
         printf("Get into on_CMDtInterest... Received command to turn on LED\n");
-    
+		
         if(schematrust_flag){
-    blink_led(2);
+		blink_led(2);
                 printf("finish blink led 2");
                 }
-  }
+	}
 
 
 }
