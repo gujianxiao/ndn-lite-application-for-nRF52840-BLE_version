@@ -191,12 +191,13 @@ int on_CMDInterest(const uint8_t* interest, uint32_t interest_size)
         printf("Get into on_CMDtInterest... Received command to turn on LED\n");
 		
         if(schematrust_flag){
-		blink_led(2);
+		blink_led(1);
                 printf("finish blink led 2");
                 }
+		
 	}
 
-        blink_led(1);
+
 
 
 }
