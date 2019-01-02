@@ -1,35 +1,33 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/access-control.o: \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/access-control.c \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/access-control.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/interest.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/name.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/name-component.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/tlv.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/decoder.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/encoder.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/../ndn-constants.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/../ndn-error-code.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/../ndn-enums.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/inttypes.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdint.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/string.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/__crossworks.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdbool.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/signature.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/../security/ndn-lite-crypto-key.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/../security/../encode/name.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/data.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/metainfo.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/signed-interest.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/interest.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../security/ndn-lite-aes.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../security/../ndn-error-code.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../security/ndn-lite-key-storage.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../security/ndn-lite-crypto-key.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../security/../encode/data.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../security/ndn-lite-random.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../security/../encode/name.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../security/detail/sec-lib/tinycrypt/tc_ecc_dh.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../security/detail/sec-lib/tinycrypt/tc_ecc.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../security/detail/sec-lib/tinycrypt/tc_cbc_mode.h \
- /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../security/detail/sec-lib/tinycrypt/tc_aes.h
+ C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ 3\ndn-lite\app-support\access-control.c \
+ C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ 3\ndn-lite\app-support\access-control.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\encode\interest.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\encode\name.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\encode\name-component.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\encode\tlv.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\encode\decoder.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\encode\encoder.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\ndn-constants.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\ndn-error-code.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/inttypes.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdint.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\ndn-enums.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/string.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdbool.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\encode\signature.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\security\ndn-lite-crypto-key.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\encode\name.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\encode\data.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\encode\metainfo.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\encode\signed-interest.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\encode\interest.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\encode\key-storage.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\encode\data.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\security\ndn-lite-aes.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\ndn-error-code.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\security\ndn-lite-rng.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\security\ndn-lite-ecc.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\security\ndn-lite-crypto-key.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\security\ndn-lite-rng.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\security\ndn-lite-hmac.h

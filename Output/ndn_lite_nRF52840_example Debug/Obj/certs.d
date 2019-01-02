@@ -1,9 +1,9 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/certs.o: \
- /home/bo/nRF5_SDK_15.2.0_9412b96/external/mbedtls/library/certs.c \
- ../../../nRF5_SDK_15.2.0_9412b96/external/nrf_tls/mbedtls/nrf_crypto/config/nrf_crypto_mbedtls_config.h \
+ C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\external\mbedtls\library\certs.c \
+ ../../nRF5_SDK_15.2.0_9412b96/external/nrf_tls/mbedtls/nrf_crypto/config/nrf_crypto_mbedtls_config.h \
  Application/sdk_config.h \
- ../../../nRF5_SDK_15.2.0_9412b96/external/mbedtls/include/mbedtls/check_config.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/limits.h \
- ../../../nRF5_SDK_15.2.0_9412b96/external/mbedtls/include/mbedtls/certs.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/stddef.h \
- /usr/share/segger_embedded_studio_for_arm_4.10a/include/__crossworks.h
+ ../../nRF5_SDK_15.2.0_9412b96/external/mbedtls/include/mbedtls/check_config.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/limits.h \
+ ../../nRF5_SDK_15.2.0_9412b96/external/mbedtls/include/mbedtls/certs.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stddef.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h

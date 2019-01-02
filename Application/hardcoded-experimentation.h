@@ -15,8 +15,8 @@
 #include "../../ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/sign-on-basic-client-consts.h"
 #include "../../ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/variants/ecc_256/sign-on-basic-ecc-256-consts.h"
 
-#define BOARD_1
-//#define BOARD_2
+//#define BOARD_1
+#define BOARD_2
 
 extern const uint8_t DEVICE_IDENTIFIER[SIGN_ON_BASIC_CLIENT_DEVICE_IDENTIFIER_MAX_LENGTH];
 
