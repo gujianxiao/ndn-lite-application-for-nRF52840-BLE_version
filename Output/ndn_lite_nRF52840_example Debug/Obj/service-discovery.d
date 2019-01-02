@@ -1,22 +1,22 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/service-discovery.o: \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite\app-support\service-discovery.c \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite\app-support\service-discovery.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\encode\interest.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\encode\name.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\encode\name-component.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\encode\tlv.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\encode\decoder.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\encode\encoder.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\ndn-constants.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\ndn-error-code.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\ndn-enums.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/inttypes.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdint.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/string.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdbool.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\encode\signature.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\security\ndn-lite-crypto-key.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\encode\name.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\encode\data.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\encode\metainfo.h
+ /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/service-discovery.c \
+ /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/service-discovery.h \
+ /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/interest.h \
+ /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/name.h \
+ /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/name-component.h \
+ /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/tlv.h \
+ /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/decoder.h \
+ /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/encoder.h \
+ /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/../ndn-constants.h \
+ /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/../ndn-error-code.h \
+ /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/../ndn-enums.h \
+ /usr/share/segger_embedded_studio_for_arm_4.10a/include/inttypes.h \
+ /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdint.h \
+ /usr/share/segger_embedded_studio_for_arm_4.10a/include/string.h \
+ /usr/share/segger_embedded_studio_for_arm_4.10a/include/__crossworks.h \
+ /usr/share/segger_embedded_studio_for_arm_4.10a/include/stdbool.h \
+ /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/signature.h \
+ /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/../security/ndn-lite-crypto-key.h \
+ /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/../security/../encode/name.h \
+ /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/data.h \
+ /home/bo/ndn-iot-package-over-nordic-sdk/ndn-lite/app-support/../encode/metainfo.h

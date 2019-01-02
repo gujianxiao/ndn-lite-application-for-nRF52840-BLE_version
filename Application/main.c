@@ -2,21 +2,21 @@
 #include "app-init-files/app_definitions.h"
 #include "app-init-files/app_initialization_functions.h"
 
-#include "ndn-lite/adaptation/ndn-nrf-ble-adaptation/logger.h"
+#include "../../ndn-lite/adaptation/ndn-nrf-ble-adaptation/logger.h"
 
 // includes for sign on client ble
 #include "hardcoded-experimentation.h"
-#include "ndn-lite/app-support/bootstrapping.h"
+#include "../../ndn-lite/app-support/bootstrapping.h"
 
 // includes for ndn standalone library
-#include "ndn-lite/encode/data.h"
-#include "ndn-lite/encode/encoder.h"
-#include "ndn-lite/encode/interest.h"
-#include "ndn-lite/face/direct-face.h"
-#include "ndn-lite/face/ndn-nrf-ble-face.h"
-#include "ndn-lite/forwarder/forwarder.h"
+#include "../../ndn-lite/encode/data.h"
+#include "../../ndn-lite/encode/encoder.h"
+#include "../../ndn-lite/encode/interest.h"
+#include "../../ndn-lite/face/direct-face.h"
+#include "../../ndn-lite/face/ndn-nrf-ble-face.h"
+#include "../../ndn-lite/forwarder/forwarder.h"
 
-#include "ndn-lite/adaptation/ndn-nrf-ble-adaptation/logger.h"
+#include "../../ndn-lite/adaptation/ndn-nrf-ble-adaptation/logger.h"
 
 #include "nrf_gpio.h"
 #include "nrfx_gpiote.h"
@@ -72,7 +72,7 @@ int m_on_data_callback(const uint8_t *data, uint32_t data_size) {
   // Commented this out until the security implementation in ndn standalone is
   // made generic to prevent conflicts of security libraries.
   // The call to ndn_data_tlv_decode_digest_verify depends on the security
-  // implementation inside of ndn-lite, which is why I have it commented out here.
+  // implementation inside of ../../ndn-lite, which is why I have it commented out here.
 //  if (ndn_data_tlv_decode_digest_verify(&recvd_data, data, data_size)) {
 //    printf("Successfully decoded received data.\n");
 //  }
