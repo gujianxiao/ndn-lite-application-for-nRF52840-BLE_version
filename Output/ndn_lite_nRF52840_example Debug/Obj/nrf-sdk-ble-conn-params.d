@@ -1,7 +1,7 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-conn-params.o: \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-conn-params\nrf-sdk-ble-conn-params.c \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-conn-params\nrf-sdk-ble-conn-params.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-conn-params\nrf-sdk-ble-conn-params-defs.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-conn-params\nrf-sdk-ble-conn-params.c \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-conn-params\nrf-sdk-ble-conn-params.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-conn-params\nrf-sdk-ble-conn-params-defs.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/timer/app_timer.h \
  Application/sdk_config.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_error.h \
@@ -48,9 +48,9 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-conn-params.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/ble_gatt.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_errors.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/string.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-consts.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-error-check.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\logger.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-consts.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-error-check.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\adaptation\ndn-nrf-ble-adaptation\logger.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_common.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_os.h \
@@ -63,4 +63,4 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-conn-params.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_instance.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_types.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_types.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\logger.h
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\adaptation\ndn-nrf-ble-adaptation\logger.h

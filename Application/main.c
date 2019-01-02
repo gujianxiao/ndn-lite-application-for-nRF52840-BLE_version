@@ -2,22 +2,21 @@
 #include "app-init-files/app_definitions.h"
 #include "app-init-files/app_initialization_functions.h"
 
-#include "ndn_standalone/adaptation/ndn-nrf-ble-adaptation/logger.h"
+#include "ndn-lite/adaptation/ndn-nrf-ble-adaptation/logger.h"
 
 // includes for sign on client ble
 #include "hardcoded-experimentation.h"
-#include "ndn_standalone/app-support/bootstrapping.h"
+#include "ndn-lite/app-support/bootstrapping.h"
 
 // includes for ndn standalone library
-#include "ndn_standalone/encode/data.h"
-#include "ndn_standalone/encode/encoder.h"
-#include "ndn_standalone/encode/interest.h"
-#include "ndn_standalone/face/direct-face.h"
-#include "ndn_standalone/face/ndn-nrf-ble-face.h"
-#include "ndn_standalone/forwarder/forwarder.h"
+#include "ndn-lite/encode/data.h"
+#include "ndn-lite/encode/encoder.h"
+#include "ndn-lite/encode/interest.h"
+#include "ndn-lite/face/direct-face.h"
+#include "ndn-lite/face/ndn-nrf-ble-face.h"
+#include "ndn-lite/forwarder/forwarder.h"
 
-#include "ndn_standalone/adaptation/ndn-nrf-ble-adaptation/logger.h"
-
+#include "ndn-lite/adaptation/ndn-nrf-ble-adaptation/logger.h"
 
 #include "nrf_gpio.h"
 #include "nrfx_gpiote.h"
@@ -151,8 +150,14 @@ int on_trustInterest(const uint8_t* interest, uint32_t interest_size)
 	//initiate the name prefix of different interest here
         ndn_name_t schema_prefix;
         ndn_name_t schema_prefix2;
+        #ifdef BOARD_1
         char schema_string[] = "/NDN-IoT/TrustChange/Board1/ControllerOnly";
         char schema_string2[] = "/NDN-IoT/TrustChange/Board1/AllNode";
+        #endif
+        #ifdef BOARD_2
+        char schema_string[] = "/NDN-IoT/TrustChange/Board2/ControllerOnly";
+        char schema_string2[] = "/NDN-IoT/TrustChange/Board2/AllNode";
+        #endif
   	ndn_name_from_string(&schema_prefix, schema_string, sizeof(schema_string));
         ndn_name_from_string(&schema_prefix2, schema_string2, sizeof(schema_string2));
 
@@ -181,7 +186,12 @@ int on_CMDInterest(const uint8_t* interest, uint32_t interest_size)
         printf("Get into on_CMDInterest... Start to decode received Interest\n");
 	//initiate the name prefix of different interest here
         ndn_name_t CMD_prefix;
+        #ifdef BOARD_1
         char CMD_string[] = "/NDN-IoT/Board1/SD_LED/ON";
+        #endif
+        #ifdef BOARD_2
+        char CMD_string[] = "/NDN-IoT/Board2/SD_LED/ON";
+        #endif
         ndn_name_from_string(&CMD_prefix, CMD_string, sizeof(CMD_string));
 
         ndn_interest_t check_interest;
@@ -289,13 +299,23 @@ int main(void) {
   printf("Device bootstrapping: Finished constructing the direct face.\n");
 
   //regeist the prefix to listen for the command of trust policy
+  #ifdef BOARD_1
   char schema_string[] = "/NDN-IoT/TrustChange/Board1";
+  #endif
+  #ifdef BOARD_2
+  char schema_string[] = "/NDN-IoT/TrustChange/Board2";
+  #endif
   ndn_name_t schema_prefix;
   ndn_name_from_string(&schema_prefix, schema_string, sizeof(schema_string));
   ndn_direct_face_register_prefix(&schema_prefix, on_trustInterest);
 
   //regeist the prefix to listen for the command of turning on LED
+  #ifdef BOARD_1
   char CMD_string[] = "/NDN-IoT/Board1";
+  #endif
+  #ifdef BOARD_2
+  char CMD_string[] = "/NDN-IoT/Board2";
+  #endif
   ndn_name_t CMD_prefix;
   ndn_name_from_string(&CMD_prefix, CMD_string, sizeof(CMD_string));
   ndn_direct_face_register_prefix(&CMD_prefix, on_CMDInterest);
@@ -331,7 +351,12 @@ int main(void) {
   //construct interest
   ndn_interest_t interest;
   ndn_interest_init(&interest);
+  #ifdef BOARD_1
   char name_string[] = "/NDN-IoT/Board2/SD_LED/ON";
+  #endif
+  #ifdef BOARD_2
+  char name_string[] = "/NDN-IoT/Board1/SD_LED/ON";
+  #endif
   ndn_name_from_string(&interest.name, name_string, sizeof(name_string));
   uint8_t interest_block[256] = {0};
   ndn_encoder_t encoder;

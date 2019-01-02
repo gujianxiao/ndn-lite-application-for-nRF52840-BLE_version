@@ -1,7 +1,7 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/main.o: \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\main.c \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\app-init-files/app_definitions.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\app-init-files/app_initialization_functions.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\main.c \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\app-init-files/app_definitions.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\app-init-files/app_initialization_functions.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdbool.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/string.h \
@@ -92,49 +92,49 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/main.o: \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/drivers/nrfx_errors.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/boards/pca10056.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/button/app_button.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\app-init-files/app_definitions.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone/adaptation/ndn-nrf-ble-adaptation/logger.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\hardcoded-experimentation.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/sign-on-basic-client-consts.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/variants/ecc_256/sign-on-basic-ecc-256-consts.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone/app-support/bootstrapping.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone/app-support/bootstrapping/secure-sign-on-files/secure-sign-on-nrf-sdk-ble/sign-on-basic-client-nrf-sdk-ble.h \
- Application/ndn_standalone/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-ndn-lite-ble-unicast-transport/nrf-sdk-ble-ndn-lite-ble-unicast-transport.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\sign-on-basic-client.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\sign-on-basic-client-consts.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\sign-on-basic-sec-intf-setter.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\sign-on-basic-client.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\sign-on-basic-client-consts.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\sign-on-basic-consts.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\tlv\sign-on-basic-tlv-consts.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone/encode/data.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone/encode/signature.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone/encode/name.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone/encode/name-component.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone/encode/tlv.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone/encode/decoder.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone/encode/encoder.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\ndn-constants.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\ndn-error-code.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\ndn-enums.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\app-init-files/app_definitions.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite/adaptation/ndn-nrf-ble-adaptation/logger.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\hardcoded-experimentation.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/sign-on-basic-client-consts.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/variants/ecc_256/sign-on-basic-ecc-256-consts.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite/app-support/bootstrapping.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on-nrf-sdk-ble/sign-on-basic-client-nrf-sdk-ble.h \
+ Application/ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-ndn-lite-ble-unicast-transport/nrf-sdk-ble-ndn-lite-ble-unicast-transport.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\sign-on-basic-client.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\sign-on-basic-client-consts.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\sign-on-basic-sec-intf-setter.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\sign-on-basic-client.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\sign-on-basic-client-consts.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\sign-on-basic-consts.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\tlv\sign-on-basic-tlv-consts.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite/encode/data.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite/encode/signature.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite/encode/name.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite/encode/name-component.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite/encode/tlv.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite/encode/decoder.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite/encode/encoder.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\ndn-constants.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\ndn-error-code.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\ndn-enums.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/inttypes.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone/encode/metainfo.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\security\ndn-lite-crypto-key.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\encode\name.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone/encode/encoder.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone/encode/interest.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone/face/direct-face.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\forwarder\face.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\encode\name.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone/face/ndn-nrf-ble-face.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\forwarder\forwarder.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\forwarder\pit.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\encode\interest.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\forwarder\face.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\forwarder\fib.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-ndn-lite-ble-unicast-transport\nrf-sdk-ble-ndn-lite-ble-unicast-transport.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite-application-for-nrf52840-ble_version\application\ndn_standalone\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-advertising\nrf-sdk-ble-adv-defs.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn_standalone/forwarder/forwarder.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite/encode/metainfo.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\security\ndn-lite-crypto-key.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\encode\name.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite/encode/encoder.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite/encode/interest.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite/face/direct-face.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\forwarder\face.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\encode\name.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite/face/ndn-nrf-ble-face.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\forwarder\forwarder.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\forwarder\pit.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\encode\interest.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\forwarder\face.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\forwarder\fib.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-ndn-lite-ble-unicast-transport\nrf-sdk-ble-ndn-lite-ble-unicast-transport.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ 2\ndn-lite-application-for-nrf52840-ble_version\application\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-advertising\nrf-sdk-ble-adv-defs.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ Stuff\ 2\ndn-lite-application-for-nRF52840-BLE_version\Application\ndn-lite/forwarder/forwarder.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/drivers/include/nrfx_gpiote.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/hal/nrf_gpiote.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/hal/nrf_gpio.h \
