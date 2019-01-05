@@ -1,5 +1,5 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-stack.o: \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ 3\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-stack\nrf-sdk-ble-stack.c \
+ C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-stack\nrf-sdk-ble-stack.c \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/common/nrf_sdh.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdbool.h \
  Application/sdk_config.h \
@@ -44,10 +44,10 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-stack.o: \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdio.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_errors.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_error_weak.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ 3\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-stack\nrf-sdk-ble-stack.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ 3\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-stack\nrf-sdk-ble-stack-defs.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-consts.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\adaptation\ndn-nrf-ble-adaptation\logger.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-stack\nrf-sdk-ble-stack.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-stack\nrf-sdk-ble-stack-defs.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-consts.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\adaptation\ndn-nrf-ble-adaptation\logger.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/string.h \

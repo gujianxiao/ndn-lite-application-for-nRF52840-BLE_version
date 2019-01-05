@@ -1,11 +1,12 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/sec-impl.o: \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ 3\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\sec-impl.c \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ 3\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\sec-impl.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\sec-impl.c \
+ C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\sec-impl.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stddef.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\security\detail\default-backend\sec-lib\micro-ecc\uecc.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ 3\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-sha256/sha256-nrf-crypto-impl.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\security\detail\default-backend\sec-lib\micro-ecc\uecc.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\sign-on-basic-sec-consts.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-sha256/sha256-nrf-crypto-impl.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/boards/boards.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/hal/nrf_gpio.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/nrfx.h \
@@ -183,7 +184,7 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/sec-impl.o: \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdlib.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/balloc/nrf_balloc.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_default_backends.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ 3\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-aes/aes-nrf-crypto-impl.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-aes/aes-nrf-crypto-impl.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/ctype.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/delay/nrf_delay.h \
@@ -196,9 +197,31 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/sec-impl.o: \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/hal/nrf_power.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_error.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/mem_manager/mem_manager.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ 3\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-hmac/hmac-nrf-crypto-impl.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-hmac/hmac-nrf-crypto-impl.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto_ecdh.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ 3\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-ecc/ecc-nrf-crypto-impl.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-ecc/ecc-nrf-crypto-impl.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto_ecdsa.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\security\detail\default-backend\sec-lib\micro-ecc\uecc.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ 3\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-ecc/ecc-microecc-impl.h
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\security\detail\default-backend\sec-lib\micro-ecc\uecc.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-ecc/ecc-microecc-impl.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\adaptation\ndn-nrf-ble-adaptation\logger.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\ndn-enums.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\ndn-error-code.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/inttypes.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\security\ndn-lite-aes.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\ndn-error-code.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\security\ndn-lite-ecc.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\security\ndn-lite-crypto-key.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\encode\name.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\encode\name-component.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\encode\tlv.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\encode\decoder.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\encode\encoder.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\ndn-constants.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\ndn-error-code.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\ndn-enums.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\security\ndn-lite-rng.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\security\ndn-lite-hmac.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\security\ndn-lite-sha.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\ndn-constants.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\security\ndn-lite-rng.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\security\ndn-lite-crypto-key.h

@@ -1,6 +1,6 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-gatt.o: \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ 3\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-gatt\nrf-sdk-ble-gatt.c \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ 3\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-gatt\nrf-sdk-ble-gatt.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-gatt\nrf-sdk-ble-gatt.c \
+ C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-gatt\nrf-sdk-ble-gatt.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/common/nrf_sdh.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdbool.h \
  Application/sdk_config.h \
@@ -53,9 +53,9 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-gatt.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/ble_gatts.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/ble/nrf_ble_gatt/nrf_ble_gatt.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/ble_gatt.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-consts.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-error-check.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\adaptation\ndn-nrf-ble-adaptation\logger.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-consts.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-error-check.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\adaptation\ndn-nrf-ble-adaptation\logger.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdio.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/experimental_section_vars/nrf_section.h \
@@ -66,4 +66,4 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-gatt.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_types.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_error.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_error_weak.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\adaptation\ndn-nrf-ble-adaptation\logger.h
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\adaptation\ndn-nrf-ble-adaptation\logger.h

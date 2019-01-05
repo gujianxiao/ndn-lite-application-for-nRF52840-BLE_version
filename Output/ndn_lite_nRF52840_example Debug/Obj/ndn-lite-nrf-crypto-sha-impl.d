@@ -1,6 +1,6 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/ndn-lite-nrf-crypto-sha-impl.o: \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ 3\ndn-lite\security\detail\nordic-sdk-nrf-backend\ndn-lite-nrf-crypto-sha-impl.c \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ 3\ndn-lite\security\detail\nordic-sdk-nrf-backend\ndn-lite-nrf-crypto-sha-impl.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\security\detail\nordic-sdk-nrf-backend\ndn-lite-nrf-crypto-sha-impl.c \
+ C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\security\detail\nordic-sdk-nrf-backend\ndn-lite-nrf-crypto-sha-impl.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/boards/boards.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/hal/nrf_gpio.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/nrfx.h \
@@ -181,5 +181,5 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/ndn-lite-nrf-crypto-sha-impl.o: \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdlib.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/balloc/nrf_balloc.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_default_backends.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\ndn-error-code.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\ndn-error-code.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/inttypes.h

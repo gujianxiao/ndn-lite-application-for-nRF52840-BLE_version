@@ -1,6 +1,6 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/ecc-nrf-crypto-impl.o: \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ 3\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-ecc\ecc-nrf-crypto-impl.c \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ 3\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-ecc\ecc-nrf-crypto-impl.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-ecc\ecc-nrf-crypto-impl.c \
+ C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-ecc\ecc-nrf-crypto-impl.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stddef.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_error.h \
@@ -168,8 +168,8 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/ecc-nrf-crypto-impl.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_default_backends.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/mem_manager/mem_manager.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto_ecdh.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\security\detail\default-backend\sec-lib\micro-ecc\uecc.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-sha256\sha256-nrf-crypto-impl.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\security\detail\default-backend\sec-lib\micro-ecc\uecc.h \
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-sha256\sha256-nrf-crypto-impl.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/boards/boards.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/hal/nrf_gpio.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/nrfx.h \
@@ -187,4 +187,4 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/ecc-nrf-crypto-impl.o: \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/drivers/nrfx_errors.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/boards/pca10056.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto_hash.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ 3\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\sign-on-basic-sec-consts.h
+ c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\sign-on-basic-sec-consts.h

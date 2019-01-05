@@ -1,6 +1,6 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/rng-nrf-crypto-impl.o: \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ 3\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-rng\rng-nrf-crypto-impl.c \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ 3\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-rng\rng-nrf-crypto-impl.h \
+ C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-rng\rng-nrf-crypto-impl.c \
+ C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\security\detail\detail-rng\rng-nrf-crypto-impl.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdint.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nordic_common.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf.h \
