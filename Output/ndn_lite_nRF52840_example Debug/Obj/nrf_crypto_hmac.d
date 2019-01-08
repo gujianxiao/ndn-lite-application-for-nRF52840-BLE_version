@@ -1,10 +1,10 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf_crypto_hmac.o: \
- C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\nrf_crypto_hmac.c \
+ C:\Users\edwar\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\nrf_crypto_hmac.c \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_common.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdint.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdbool.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/string.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stdint.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stdbool.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/string.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/__crossworks.h \
  Application/sdk_config.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nordic_common.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/compiler_abstraction.h \
@@ -12,7 +12,7 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf_crypto_hmac.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_errors.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/nrf_error.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_util.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stddef.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stddef.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf52840.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/toolchain/cmsis/include/core_cm4.h \
@@ -37,10 +37,10 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf_crypto_hmac.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_instance.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_types.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_types.h \
- C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\nrf_crypto_hmac.h \
- C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\nrf_crypto_types.h \
- C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\nrf_crypto_hmac_backend.h \
- C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\nrf_crypto_hmac_shared.h \
+ C:\Users\edwar\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\nrf_crypto_hmac.h \
+ C:\Users\edwar\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\nrf_crypto_types.h \
+ C:\Users\edwar\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\nrf_crypto_hmac_backend.h \
+ C:\Users\edwar\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\nrf_crypto_hmac_shared.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/backend/mbedtls/mbedtls_backend_hmac.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/backend/cc310/cc310_backend_hmac.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto_hmac_shared.h \
@@ -52,9 +52,9 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf_crypto_hmac.o: \
  ../../nRF5_SDK_15.2.0_9412b96/external/nrf_cc310/include/crys_hash_defs.h \
  ../../nRF5_SDK_15.2.0_9412b96/external/nrf_cc310/include/crys_hmac_defs.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/backend/oberon/oberon_backend_hmac.h \
- C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\nrf_crypto_error.h \
- C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\nrf_crypto_init.h \
- C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\nrf_crypto_mem.h \
+ C:\Users\edwar\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\nrf_crypto_error.h \
+ C:\Users\edwar\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\nrf_crypto_init.h \
+ C:\Users\edwar\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\nrf_crypto_mem.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_alloca.h \
- C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\nrf_crypto_shared.h \
+ C:\Users\edwar\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\nrf_crypto_shared.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_macros.h

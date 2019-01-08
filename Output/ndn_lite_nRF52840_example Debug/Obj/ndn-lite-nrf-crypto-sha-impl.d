@@ -1,16 +1,21 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/ndn-lite-nrf-crypto-sha-impl.o: \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\security\detail\nordic-sdk-nrf-backend\ndn-lite-nrf-crypto-sha-impl.c \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\security\detail\nordic-sdk-nrf-backend\ndn-lite-nrf-crypto-sha-impl.h \
+ C:\Users\edwar\Desktop\ndn-lite-work\ndn-lite\security\detail\nordic-sdk-nrf-backend\ndn-lite-nrf-crypto-sha-impl.c \
+ C:\Users\edwar\Desktop\ndn-lite-work\ndn-lite\security\detail\nordic-sdk-nrf-backend\ndn-lite-nrf-crypto-sha-impl.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stdint.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\security\ndn-lite-sha.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\ndn-error-code.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/inttypes.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\ndn-constants.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\ndn-error-code.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/boards/boards.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/hal/nrf_gpio.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/nrfx.h \
  ../../nRF5_SDK_15.2.0_9412b96/integration/nrfx/nrfx_config.h \
  Application/sdk_config.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/drivers/nrfx_common.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdint.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stddef.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdbool.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stddef.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/__crossworks.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stdbool.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf52840.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/toolchain/cmsis/include/core_cm4.h \
@@ -42,7 +47,7 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/ndn-lite-nrf-crypto-sha-impl.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/nrf_nvic.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nrf_assert.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_error.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdio.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stdio.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_errors.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/nrf_error.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_error_weak.h \
@@ -58,7 +63,7 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/ndn-lite-nrf-crypto-sha-impl.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto_types.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto_mem.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_common.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/string.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/string.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_os.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_util.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_macros.h \
@@ -178,8 +183,6 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/ndn-lite-nrf-crypto-sha-impl.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/src/nrf_log_ctrl_internal.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_backend_interface.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/memobj/nrf_memobj.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdlib.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stdlib.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/balloc/nrf_balloc.h \
- ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_default_backends.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\ndn-error-code.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/inttypes.h
+ ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_default_backends.h

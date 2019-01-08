@@ -1,10 +1,10 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/cc310_backend_chacha_poly_aead.o: \
- C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\backend\cc310\cc310_backend_chacha_poly_aead.c \
+ C:\Users\edwar\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\backend\cc310\cc310_backend_chacha_poly_aead.c \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_common.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdint.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdbool.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/string.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stdint.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stdbool.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/string.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/__crossworks.h \
  Application/sdk_config.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nordic_common.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/compiler_abstraction.h \
@@ -12,7 +12,7 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/cc310_backend_chacha_poly_aead.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_errors.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/nrf_error.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_util.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stddef.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stddef.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf52840.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/toolchain/cmsis/include/core_cm4.h \
@@ -30,7 +30,7 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/cc310_backend_chacha_poly_aead.o: \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/drivers/nrfx_common.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf_peripherals.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf52840_peripherals.h \
- C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\backend\cc310\cc310_backend_mutex.h \
+ C:\Users\edwar\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\backend\cc310\cc310_backend_mutex.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/mutex/nrf_mtx.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/atomic/nrf_atomic.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nrf_assert.h \
@@ -38,7 +38,7 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/cc310_backend_chacha_poly_aead.o: \
  ../../nRF5_SDK_15.2.0_9412b96/external/nrf_cc310/include/crys_error.h \
  ../../nRF5_SDK_15.2.0_9412b96/external/nrf_cc310/include/ssi_pal_types.h \
  ../../nRF5_SDK_15.2.0_9412b96/external/nrf_cc310/include/ssi_pal_types_plat.h \
- C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\backend\cc310\cc310_backend_chacha_poly_aead.h \
+ C:\Users\edwar\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\backend\cc310\cc310_backend_chacha_poly_aead.h \
  ../../nRF5_SDK_15.2.0_9412b96/external/nrf_cc310/include/crys_chacha_poly.h \
  ../../nRF5_SDK_15.2.0_9412b96/external/nrf_cc310/include/crys_chacha.h \
  ../../nRF5_SDK_15.2.0_9412b96/external/nrf_cc310/include/crys_poly.h \
@@ -47,4 +47,4 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/cc310_backend_chacha_poly_aead.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto_types.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto_aead_shared.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto_types.h \
- C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\backend\cc310\cc310_backend_shared.h
+ C:\Users\edwar\Desktop\nRF5_SDK_15.2.0_9412b96\components\libraries\crypto\backend\cc310\cc310_backend_shared.h

@@ -1,14 +1,14 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-stack.o: \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-stack\nrf-sdk-ble-stack.c \
+ C:\Users\edwar\Desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-stack\nrf-sdk-ble-stack.c \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/common/nrf_sdh.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdbool.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stdbool.h \
  Application/sdk_config.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_errors.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdint.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stdint.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/nrf_error.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/experimental_section_vars/nrf_section_iter.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stddef.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stddef.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/__crossworks.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/experimental_section_vars/nrf_section.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nordic_common.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nrf_assert.h \
@@ -41,16 +41,16 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-stack.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/ble_gattc.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/ble_gatts.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_error.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdio.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stdio.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_errors.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_error_weak.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-stack\nrf-sdk-ble-stack.h \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-stack\nrf-sdk-ble-stack-defs.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-consts.h \
- c:\users\rena\ li\desktop\bo's\ stuff\ndn-lite\adaptation\ndn-nrf-ble-adaptation\logger.h \
+ C:\Users\edwar\Desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-stack\nrf-sdk-ble-stack.h \
+ C:\Users\edwar\Desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-stack\nrf-sdk-ble-stack-defs.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-consts.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\logger.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_common.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/string.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/string.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_os.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_util.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_macros.h \

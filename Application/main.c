@@ -220,6 +220,8 @@ int main(void) {
 
   printf("Entered main function of main_board1.c\n");
 
+  ndn_security_init();
+
   //initialize the button and LED
   nrf_gpio_cfg_output(BSP_LED_0);                    //BSP_LED_0 is pin 13 in the nRF52840-DK. Configure pin 13 as standard output.
   nrf_gpio_cfg_input(BUTTON_1, NRF_GPIO_PIN_PULLUP); // Configure pin 11 as standard input with a pull up resister.

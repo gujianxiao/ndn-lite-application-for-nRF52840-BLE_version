@@ -315,7 +315,6 @@
           <folder Name="secure-sign-on-files">
             <folder Name="secure-sign-on">
               <folder Name="tlv">
-                <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/tlv/sign-on-basic-tlv-consts.h" />
                 <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/tlv/sign-on-basic-tlv-helpers.c" />
                 <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/tlv/sign-on-basic-tlv-helpers.h" />
                 <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/tlv/sign-on-basic-tlv-impl-consts.h" />
@@ -324,10 +323,8 @@
                 <folder Name="basic">
                   <folder Name="security">
                     <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/security/sign-on-basic-sec-consts.h" />
-                    <folder Name="detail">
-                      <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/security/detail/sec-impl.c" />
-                      <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/security/detail/sec-impl.h" />
-                    </folder>
+                    <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/security/sign-on-basic-sec-impl.c" />
+                    <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/security/sign-on-basic-sec-impl.h" />
                   </folder>
                   <folder Name="variants">
                     <folder Name="ecc_256">
@@ -518,6 +515,7 @@
         <file file_name="../ndn-lite/security/ndn-lite-sec-utils.h" />
         <file file_name="../ndn-lite/security/ndn-lite-sec-utils.c" />
         <file file_name="../ndn-lite/security/ndn-lite-rng.c" />
+        <file file_name="../ndn-lite/security/ndn-lite-sec-config.c" />
       </folder>
     </folder>
   </project>

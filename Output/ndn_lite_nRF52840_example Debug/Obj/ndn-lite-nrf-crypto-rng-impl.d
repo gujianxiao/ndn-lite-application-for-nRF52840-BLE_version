@@ -1,10 +1,10 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/ndn-lite-nrf-crypto-rng-impl.o: \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\security\detail\nordic-sdk-nrf-backend\ndn-lite-nrf-crypto-rng-impl.c \
- C:\Users\Rena\ Li\Desktop\Bo's\ stuff\ndn-lite\security\detail\nordic-sdk-nrf-backend\ndn-lite-nrf-crypto-rng-impl.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdint.h \
+ C:\Users\edwar\Desktop\ndn-lite-work\ndn-lite\security\detail\nordic-sdk-nrf-backend\ndn-lite-nrf-crypto-rng-impl.c \
+ C:\Users\edwar\Desktop\ndn-lite-work\ndn-lite\security\detail\nordic-sdk-nrf-backend\ndn-lite-nrf-crypto-rng-impl.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stdint.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto_init.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stdbool.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stdbool.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/experimental_section_vars/nrf_section.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nordic_common.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_errors.h \
@@ -12,15 +12,15 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/ndn-lite-nrf-crypto-rng-impl.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto_types.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto_mem.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_common.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/string.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/string.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/__crossworks.h \
  Application/sdk_config.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nordic_common.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/compiler_abstraction.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_os.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_errors.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_util.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/stddef.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stddef.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/nrf52840.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/toolchain/cmsis/include/core_cm4.h \
@@ -140,4 +140,7 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/ndn-lite-nrf-crypto-rng-impl.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto_eddsa_backend.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/backend/cc310/cc310_backend_eddsa.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto_eddsa_shared.h \
- ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/backend/oberon/oberon_backend_eddsa.h
+ ../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/backend/oberon/oberon_backend_eddsa.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\security\ndn-lite-rng.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\ndn-error-code.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/inttypes.h

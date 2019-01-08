@@ -1,9 +1,9 @@
 Output/ndn_lite_nRF52840_example\ Debug/Obj/version_features.o: \
- C:\Users\Rena\ Li\Desktop\nRF5_SDK_15.2.0_9412b96\external\mbedtls\library\version_features.c \
+ C:\Users\edwar\Desktop\nRF5_SDK_15.2.0_9412b96\external\mbedtls\library\version_features.c \
  ../../nRF5_SDK_15.2.0_9412b96/external/nrf_tls/mbedtls/nrf_crypto/config/nrf_crypto_mbedtls_config.h \
  Application/sdk_config.h \
  ../../nRF5_SDK_15.2.0_9412b96/external/mbedtls/include/mbedtls/check_config.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/limits.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/limits.h \
  ../../nRF5_SDK_15.2.0_9412b96/external/mbedtls/include/mbedtls/version.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/string.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.12/include/__crossworks.h
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/string.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/__crossworks.h
