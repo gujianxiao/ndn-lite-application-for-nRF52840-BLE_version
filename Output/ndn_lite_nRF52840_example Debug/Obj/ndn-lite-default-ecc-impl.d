@@ -6,6 +6,7 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/ndn-lite-default-ecc-impl.o: \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stdint.h \
  C:\Users\edwar\Desktop\ndn-lite-work\ndn-lite\security\detail\default-backend\sec-lib/tinycrypt/tc_ecc.h \
  C:\Users\edwar\Desktop\ndn-lite-work\ndn-lite\security\detail\default-backend\sec-lib/micro-ecc/uECC.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\ndn-constants.h \
  C:\Users\edwar\Desktop\ndn-lite-work\ndn-lite\security\detail\default-backend\ndn-lite-default-sha-impl.h \
  C:\Users\edwar\Desktop\ndn-lite-work\ndn-lite\security\detail\default-backend\sec-lib/tinycrypt/tc_hmac.h \
  C:\Users\edwar\Desktop\ndn-lite-work\ndn-lite\security\detail\default-backend\sec-lib/tinycrypt/tc_sha256.h \
@@ -25,7 +26,7 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/ndn-lite-default-ecc-impl.o: \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\security\ndn-lite-rng.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\security\ndn-lite-sha.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\ndn-constants.h \
- c:\users\edwar\desktop\ndn-lite-work\ndn-lite\ndn-constants.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\security\ndn-lite-sec-utils.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\ndn-error-code.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\ndn-enums.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/string.h

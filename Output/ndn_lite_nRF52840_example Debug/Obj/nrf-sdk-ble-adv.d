@@ -59,7 +59,7 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-adv.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/common/nrf_sdh_soc.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/nrf_soc.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/nrf_error_soc.h \
- c:\users\edwar\desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\logger.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-logger.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/experimental_section_vars/nrf_section.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/strerror/nrf_strerror.h \
@@ -68,5 +68,4 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-adv.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_types.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_types.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-consts.h \
- c:\users\edwar\desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-error-check.h \
- c:\users\edwar\desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\logger.h
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-error-check.h

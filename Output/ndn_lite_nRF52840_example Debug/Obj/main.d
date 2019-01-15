@@ -93,19 +93,18 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/main.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/boards/pca10056.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/button/app_button.h \
  C:\Users\edwar\Desktop\ndn-lite-work\ndn-lite-application-for-nRF52840-BLE_version\Application\app-init-files/app_definitions.h \
- c:\users\edwar\desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\logger.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\app-support\bootstrapping.h \
- c:\users\edwar\desktop\ndn-lite-work\ndn-lite\app-support\bootstrapping/secure-sign-on-files/secure-sign-on-nrf-sdk-ble/sign-on-basic-client-nrf-sdk-ble.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\app-support\bootstrapping/secure-sign-on-nrf-sdk-ble/sign-on-basic-client-nrf-sdk-ble.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-ndn-lite-ble-unicast-transport\nrf-sdk-ble-ndn-lite-ble-unicast-transport.h \
- c:\users\edwar\desktop\ndn-lite-work\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\sign-on-basic-client.h \
- c:\users\edwar\desktop\ndn-lite-work\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\sign-on-basic-client-consts.h \
- c:\users\edwar\desktop\ndn-lite-work\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\sign-on-basic-sec-intf-setter.h \
- c:\users\edwar\desktop\ndn-lite-work\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\sign-on-basic-client.h \
- c:\users\edwar\desktop\ndn-lite-work\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\sign-on-basic-client-consts.h \
- c:\users\edwar\desktop\ndn-lite-work\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\sign-on-basic-consts.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\app-support\bootstrapping\secure-sign-on\sign-on-basic-client.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\app-support\bootstrapping\secure-sign-on\sign-on-basic-client-consts.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\app-support\bootstrapping\secure-sign-on\sign-on-basic-sec-intf-setter.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\app-support\bootstrapping\secure-sign-on\sign-on-basic-client.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\app-support\bootstrapping\secure-sign-on\sign-on-basic-client-consts.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\app-support\bootstrapping\secure-sign-on\sign-on-basic-consts.h \
  C:\Users\edwar\Desktop\ndn-lite-work\ndn-lite-application-for-nRF52840-BLE_version\Application\hardcoded-experimentation.h \
- c:\users\edwar\desktop\ndn-lite-work\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\sign-on-basic-client-consts.h \
- c:\users\edwar\desktop\ndn-lite-work\ndn-lite\app-support\bootstrapping\secure-sign-on-files\secure-sign-on\variants\basic\variants\ecc_256\sign-on-basic-ecc-256-consts.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\app-support\bootstrapping\secure-sign-on\sign-on-basic-client-consts.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\app-support\bootstrapping\secure-sign-on\variants\ecc_256\sign-on-basic-ecc-256-consts.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\encode\data.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\encode\signature.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\encode\name.h \
@@ -127,6 +126,7 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/main.o: \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\security\detail/default-backend/ndn-lite-default-ecc-impl.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\security\detail/default-backend/sec-lib/tinycrypt/tc_ecc.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\security\detail/default-backend/sec-lib/micro-ecc/uECC.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\ndn-constants.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\security\detail/default-backend/ndn-lite-default-hmac-impl.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\security\ndn-lite-ecc.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\security\ndn-lite-rng.h \
@@ -148,8 +148,10 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/main.o: \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-ndn-lite-ble-unicast-transport\nrf-sdk-ble-ndn-lite-ble-unicast-transport.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-advertising\nrf-sdk-ble-adv-defs.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\forwarder\forwarder.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\security\ndn-lite-sec-utils.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/delay/nrf_delay.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/drivers/include/nrfx_gpiote.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/hal/nrf_gpiote.h \
  ../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/hal/nrf_gpio.h \
- ../../nRF5_SDK_15.2.0_9412b96/components/boards/pca10056.h
+ ../../nRF5_SDK_15.2.0_9412b96/components/boards/pca10056.h \
+ C:\Users\edwar\Desktop\ndn-lite-work\ndn-lite-application-for-nRF52840-BLE_version\Application\print-helper.h

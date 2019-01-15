@@ -2,8 +2,6 @@
 #include "app-init-files/app_definitions.h"
 #include "app-init-files/app_initialization_functions.h"
 
-#include "../../ndn-lite/adaptation/ndn-nrf-ble-adaptation/logger.h"
-
 // includes for sign on client ble
 #include "../../ndn-lite/app-support/bootstrapping.h"
 #include "hardcoded-experimentation.h"
@@ -16,12 +14,14 @@
 #include "../../ndn-lite/face/ndn-nrf-ble-face.h"
 #include "../../ndn-lite/forwarder/forwarder.h"
 
-#include "../../ndn-lite/adaptation/ndn-nrf-ble-adaptation/logger.h"
+#include "../../ndn-lite/security/ndn-lite-sec-utils.h"
 
 #include "nrf_delay.h" //For basic delaying functions
 #include "nrf_gpio.h"
 #include "nrfx_gpiote.h"
 #include "pca10056.h" //GPIO definitions for the nRF52840-DK (aka pca10056)
+
+#include "print-helper.h"
 
 static uint8_t schematrust_flag = 1;
 
@@ -57,13 +57,13 @@ ndn_nrf_ble_face_t *m_ndn_nrf_ble_face;
 
 // Callback for when interest for certificate times out.
 int m_interest_timeout_callback(const uint8_t *interest, uint32_t interest_size) {
-  printf("Interest timeout callback was triggered.\n");
+  APP_LOG("Interest timeout callback was triggered.\n");
   return 0;
 }
 
 // Callback for when we receive data for the interest we send for the certificate.
 int m_on_data_callback(const uint8_t *data, uint32_t data_size) {
-  printf("On data callback was triggered.\n");
+  APP_LOG("On data callback was triggered.\n");
 
   ndn_data_t recvd_data;
 
@@ -72,7 +72,7 @@ int m_on_data_callback(const uint8_t *data, uint32_t data_size) {
   // The call to ndn_data_tlv_decode_digest_verify depends on the security
   // implementation inside of ../../ndn-lite, which is why I have it commented out here.
   //  if (ndn_data_tlv_decode_digest_verify(&recvd_data, data, data_size)) {
-  //    printf("Successfully decoded received data.\n");
+  //    APP_LOG("Successfully decoded received data.\n");
   //  }
 
   return 0;
@@ -80,28 +80,28 @@ int m_on_data_callback(const uint8_t *data, uint32_t data_size) {
 
 // Callback for when sign on has completed.
 void m_on_sign_on_completed_callback(int result_code) {
-  printf("in main, m_on_sign_on_completed_callback got called.\n");
+  APP_LOG("in main, m_on_sign_on_completed_callback got called.\n");
 
   if (result_code == NDN_SUCCESS) {
-    printf("Sign on completed succesfully.\n");
+    APP_LOG("Sign on completed succesfully.\n");
     blink_led(3);
-    printf("Value of KD pri after completing sign on:\n");
+    APP_LOG("Value of KD pri after completing sign on:\n");
     for (int i = 0; i < get_sign_on_basic_client_nrf_sdk_ble_instance()->KD_pri_len; i++) {
-      printf("%02x", get_sign_on_basic_client_nrf_sdk_ble_instance()->KD_pri_p[i]);
+      APP_LOG("%02x", get_sign_on_basic_client_nrf_sdk_ble_instance()->KD_pri_p[i]);
     }
-    printf("\n");
+    APP_LOG("\n");
 
-    printf("Value of KD pub cert after completing sign on:\n");
+    APP_LOG("Value of KD pub cert after completing sign on:\n");
     for (int i = 0; i < get_sign_on_basic_client_nrf_sdk_ble_instance()->KD_pub_cert_len; i++) {
-      printf("%02x", get_sign_on_basic_client_nrf_sdk_ble_instance()->KD_pub_cert_p[i]);
+      APP_LOG("%02x", get_sign_on_basic_client_nrf_sdk_ble_instance()->KD_pub_cert_p[i]);
     }
-    printf("\n");
+    APP_LOG("\n");
 
-    printf("Value of trust anchor cert after completing sign on:\n");
+    APP_LOG("Value of trust anchor cert after completing sign on:\n");
     for (int i = 0; i < get_sign_on_basic_client_nrf_sdk_ble_instance()->trust_anchor_cert_len; i++) {
-      printf("%02x", get_sign_on_basic_client_nrf_sdk_ble_instance()->trust_anchor_cert_p[i]);
+      APP_LOG("%02x", get_sign_on_basic_client_nrf_sdk_ble_instance()->trust_anchor_cert_p[i]);
     }
-    printf("\n");
+    APP_LOG("\n");
 
     // Create the name of the certificate to send an interest for.
     ndn_name_t dummy_interest_name;
@@ -112,7 +112,7 @@ void m_on_sign_on_completed_callback(int result_code) {
     ndn_interest_t dummy_interest;
     ndn_interest_from_name(&dummy_interest, &dummy_interest_name);
 
-    printf("Finished initializing the dummy interest.\n");
+    APP_LOG("Finished initializing the dummy interest.\n");
 
     // Initialize the interest encoder.
     ndn_encoder_t interest_encoder;
@@ -120,12 +120,12 @@ void m_on_sign_on_completed_callback(int result_code) {
     uint8_t encoded_interest_buf[encoded_interest_max_size];
     encoder_init(&interest_encoder, encoded_interest_buf, encoded_interest_max_size);
 
-    printf("Finished initializing the interest encoder.\n");
+    APP_LOG("Finished initializing the interest encoder.\n");
 
     // TLV encode the interest.
     ndn_interest_tlv_encode(&interest_encoder, &dummy_interest);
 
-    printf("Finished encoding the ndn interest.\n");
+    APP_LOG("Finished encoding the ndn interest.\n");
     APP_LOG_HEX("Encoded interest:", interest_encoder.output_value, interest_encoder.offset);
 
     //  // Express the encoded interest for the certificate.
@@ -136,12 +136,12 @@ void m_on_sign_on_completed_callback(int result_code) {
     //      m_on_data_callback,
     //      m_interest_timeout_callback);
   } else {
-    printf("Sign on failed, error code: %d\n", result_code);
+    APP_LOG("Sign on failed, error code: %d\n", result_code);
   }
 }
 
 int on_trustInterest(const uint8_t *interest, uint32_t interest_size) {
-  printf("Get into on_trustInterest... Start to decode received Interest\n");
+  APP_LOG("Get into on_trustInterest... Start to decode received Interest\n");
   blink_led(3);
   //initiate the name prefix of different interest here
   ndn_name_t schema_prefix;
@@ -159,24 +159,24 @@ int on_trustInterest(const uint8_t *interest, uint32_t interest_size) {
 
   ndn_interest_t check_interest;
   int result = ndn_interest_from_block(&check_interest, interest, interest_size);
-  printf("compare results of controller only: %d\n", ndn_name_compare(&schema_prefix, &check_interest.name));
-  printf("compare results of all nodes: %d\n", ndn_name_compare(&schema_prefix2, &check_interest.name));
+  APP_LOG("compare results of controller only: %d\n", ndn_name_compare(&schema_prefix, &check_interest.name));
+  APP_LOG("compare results of all nodes: %d\n", ndn_name_compare(&schema_prefix2, &check_interest.name));
 
   if (ndn_name_compare(&check_interest.name, &schema_prefix) == 0) {
-    printf("Get into on_trustInterest... Trust policy change to controller\n");
+    APP_LOG("Get into on_trustInterest... Trust policy change to controller\n");
     schematrust_flag = 0;
     blink_led(4);
   }
 
   if (ndn_name_compare(&check_interest.name, &schema_prefix2) == 0) {
-    printf("Get into on_trustInterest... Trust policy change to all nodes\n");
+    APP_LOG("Get into on_trustInterest... Trust policy change to all nodes\n");
     schematrust_flag = 1;
     blink_led(4);
   }
 }
 
 int on_CMDInterest(const uint8_t *interest, uint32_t interest_size) {
-  printf("Get into on_CMDInterest... Start to decode received Interest\n");
+  APP_LOG("Get into on_CMDInterest... Start to decode received Interest\n");
   //initiate the name prefix of different interest here
   ndn_name_t CMD_prefix;
 #ifdef BOARD_1
@@ -191,11 +191,11 @@ int on_CMDInterest(const uint8_t *interest, uint32_t interest_size) {
   int result = ndn_interest_from_block(&check_interest, interest, interest_size);
 
   if (ndn_name_compare(&check_interest.name, &CMD_prefix) == 0) {
-    printf("Get into on_CMDtInterest... Received command to turn on LED\n");
+    APP_LOG("Get into on_CMDtInterest... Received command to turn on LED\n");
 
     if (schematrust_flag) {
       blink_led(1);
-      printf("finish blink led 2");
+      APP_LOG("finish blink led 2");
     }
   }
 }
@@ -218,7 +218,7 @@ int on_data_callback(const uint8_t *data, uint32_t data_size) {
  */
 int main(void) {
 
-  printf("Entered main function of main_board1.c\n");
+  APP_LOG("Entered main function of main_board1.c\n");
 
   ndn_security_init();
 
@@ -254,8 +254,8 @@ int main(void) {
   err_code = nrf_crypto_init();
   APP_ERROR_CHECK(err_code);
 
-  printf("Secure sign-on application successfully started.\n");
-  printf("Size of sign_on_basic_client_t structure: %d\n", sizeof(struct sign_on_basic_client_t));
+  APP_LOG("Secure sign-on application successfully started.\n");
+  APP_LOG("Size of sign_on_basic_client_t structure: %d\n", sizeof(struct sign_on_basic_client_t));
 
   // Initialize the ndn lite forwarder
   ndn_forwarder_init();
@@ -273,15 +273,15 @@ int main(void) {
   // so that the direct face's interest gets routed to this ble face
   int ret;
   if ((ret = ndn_forwarder_fib_insert(&dummy_interest_name, &m_ndn_nrf_ble_face->intf, 0)) != 0) {
-    printf("Problem inserting fib entry, error code %d\n", ret);
+    APP_LOG("Problem inserting fib entry, error code %d\n", ret);
   }
 
-  printf("Device bootstrapping: Finished creating ble face and inserting it into FIB.\n");
+  APP_LOG("Device bootstrapping: Finished creating ble face and inserting it into FIB.\n");
 
   // Create a direct face, which we will use to send the interest for our certificate after sign on.
   m_face = ndn_direct_face_construct(m_face_id_direct);
 
-  printf("Device bootstrapping: Finished constructing the direct face.\n");
+  APP_LOG("Device bootstrapping: Finished constructing the direct face.\n");
 
 //regeist the prefix to listen for the command of trust policy
 #ifdef BOARD_1
@@ -311,7 +311,7 @@ int main(void) {
   ndn_name_from_string(&prefix, prefix_string, sizeof(prefix_string));
 
   if ((ret = ndn_forwarder_fib_insert(&prefix, &m_ndn_nrf_ble_face->intf, 0)) != 0) {
-    printf("Problem inserting fib entry, error code %d\n", ret);
+    APP_LOG("Problem inserting fib entry, error code %d\n", ret);
   }
 
   blink_led(3);
@@ -320,17 +320,17 @@ int main(void) {
   for (;;) {
     if (nrf_gpio_pin_read(BUTTON_1) == 0 && schematrust_flag) { // If button 1 is pressed (Active Low)
       nrf_gpio_pin_write(BSP_LED_0, 0);                         // Turn on LED
-      printf("Button 1 pressed. schematrust_flag is %d\n", schematrust_flag);
+      APP_LOG("Button 1 pressed. schematrust_flag is %d\n", schematrust_flag);
       nrf_delay_ms(100); // for debouncing
     }
     if (nrf_gpio_pin_read(BUTTON_2) == 0) { // If button 2 is pressed (Active Low)
       nrf_gpio_pin_write(BSP_LED_0, 1);     // Turn off LED
-      printf("Button 2 pressed.schematrust_flag is %d\n", schematrust_flag);
+      APP_LOG("Button 2 pressed.schematrust_flag is %d\n", schematrust_flag);
       nrf_delay_ms(100); // for debouncing
     }
     if (nrf_gpio_pin_read(BUTTON_3) == 0) { // If button 2 is pressed (Active Low)
       //send Interest here
-      printf("Button 3 pressed. start to send Interest of turn on LED\n");
+      APP_LOG("Button 3 pressed. start to send Interest of turn on LED\n");
       //construct interest
       ndn_interest_t interest;
       ndn_interest_init(&interest);

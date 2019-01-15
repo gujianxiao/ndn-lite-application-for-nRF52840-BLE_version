@@ -27,15 +27,11 @@
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;app-support"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;app-support;bootstrapping"/>
-  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;app-support;bootstrapping;secure-sign-on-files"/>
-  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;app-support;bootstrapping;secure-sign-on-files;secure-sign-on"/>
-  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;app-support;bootstrapping;secure-sign-on-files;secure-sign-on;tlv"/>
-  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;app-support;bootstrapping;secure-sign-on-files;secure-sign-on;variants"/>
-  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;app-support;bootstrapping;secure-sign-on-files;secure-sign-on;variants;basic"/>
-  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;app-support;bootstrapping;secure-sign-on-files;secure-sign-on;variants;basic;security"/>
-  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;app-support;bootstrapping;secure-sign-on-files;secure-sign-on;variants;basic;variants"/>
-  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;app-support;bootstrapping;secure-sign-on-files;secure-sign-on;variants;basic;variants;ecc_256"/>
-  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;app-support;bootstrapping;secure-sign-on-files;secure-sign-on-nrf-sdk-ble"/>
+  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;app-support;bootstrapping;secure-sign-on"/>
+  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;app-support;bootstrapping;secure-sign-on;security"/>
+  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;app-support;bootstrapping;secure-sign-on;variants"/>
+  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;app-support;bootstrapping;secure-sign-on;variants;ecc_256"/>
+  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;app-support;bootstrapping;secure-sign-on-nrf-sdk-ble"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;encode"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;security"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;security;detail"/>
@@ -73,42 +69,22 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="218" useTextEdit="1" useBinaryEdit="0" left="0" path="Application/main.c" selected="1" top="210" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="46" y="89" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/sign-on-basic-client.c" selected="0" top="759" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="33" y="253" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/sign-on-basic-client.h" selected="0" top="246" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="101" y="84" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/ndn-error-code.h" selected="0" top="70" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="102" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/encode/decoder.h" selected="0" top="91" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/encode/data.h" selected="0" top="24" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="17" y="84" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/encode/data.c" selected="0" top="86" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="23" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/encode/name.c" selected="0" top="12" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/ndn-enums.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/encode/tlv.h" selected="0" top="74" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="12" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/tlv/sign-on-basic-tlv-impl-consts.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="44" y="22" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/tlv/sign-on-basic-tlv-helpers.c" selected="0" top="15" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="52" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/encode/signature.c" selected="0" top="42" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/encode/encoder.h" selected="0" top="156" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="22" y="147" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/security/sign-on-basic-sec-impl.c" selected="0" top="135" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="77" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/security/ndn-lite-ecc.c" selected="0" top="63" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="13" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/security/detail/nordic-sdk-nrf-backend/ndn-lite-nrf-crypto-sha-impl.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/security/detail/nordic-sdk-nrf-backend/ndn-lite-nrf-crypto-sha-impl.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="13" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/security/detail/nordic-sdk-nrf-backend/ndn-lite-nrf-crypto-rng-impl.h" selected="0" top="15" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="32" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/security/detail/nordic-sdk-nrf-backend/ndn-lite-nrf-crypto-rng-impl.c" selected="0" top="21" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="17" y="48" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/security/ndn-lite-sec-config.h" selected="0" top="135" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="52" y="16" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/security/ndn-lite-sec-config.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/security/ndn-lite-sha.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/security/ndn-lite-sha.h" selected="0" top="21" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="70" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on-nrf-sdk-ble/sign-on-basic-client-nrf-sdk-ble.c" selected="0" top="63" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="25" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/sign-on-basic-sec-intf-setter.c" selected="0" top="21" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="88" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/app-support/bootstrapping/secure-sign-on-files/secure-sign-on/variants/basic/variants/ecc_256/sign-on-basic-ecc-256-sec.c" selected="0" top="77" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="22" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/security/ndn-lite-ecc.h" selected="0" top="22" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/security/detail/default-backend/ndn-lite-default-ecc-impl.h" selected="0" top="12" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/security/detail/default-backend/ndn-lite-default-sha-impl.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/security/detail/default-backend/ndn-lite-default-sha-impl.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/security/detail/default-backend/ndn-lite-default-hmac-impl.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/security/detail/default-backend/ndn-lite-default-hmac-impl.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/security/detail/default-backend/ndn-lite-default-ecc-impl.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="20" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/security/ndn-lite-rng.c" selected="0" top="9" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="51" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/security/ndn-lite-rng.h" selected="0" top="29" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="218" useTextEdit="1" useBinaryEdit="0" left="0" path="Application/main.c" selected="1" top="217" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="3" y="653" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/app-support/bootstrapping/secure-sign-on/sign-on-basic-client.c" selected="0" top="643" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="30" y="29" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/app-support/bootstrapping/secure-sign-on/sign-on-basic-sec-intf-setter.h" selected="0" top="15" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/app-support/bootstrapping/secure-sign-on/security/sign-on-basic-sec-impl.c" selected="0" top="105" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/app-support/bootstrapping/secure-sign-on/security/sign-on-basic-sec-impl.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="15" y="18" useTextEdit="1" useBinaryEdit="0" left="0" path="Application/hardcoded-experimentation.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="Application/hardcoded-experimentation.c" selected="0" top="10" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="Application/print-helper.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="3" useTextEdit="1" useBinaryEdit="0" left="0" path="Application/print-helper.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="61" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/ndn-error-code.h" selected="0" top="55" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="52" y="257" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/app-support/bootstrapping/secure-sign-on/sign-on-basic-client.h" selected="0" top="241" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="32" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/app-support/bootstrapping/secure-sign-on/sign-on-basic-sec-intf-setter.c" selected="0" top="18" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="66" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/app-support/bootstrapping/secure-sign-on/variants/ecc_256/sign-on-basic-ecc-256-sec.c" selected="0" top="41" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="73" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/app-support/bootstrapping/secure-sign-on/variants/ecc_256/sign-on-basic-ecc-256-sec.h" selected="0" top="60" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/encode/data.c" selected="0" top="153" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../ndn-lite/app-support/access-control.c" selected="0" top="77" codecName="Default"/>
  </Files>
- <ARMCrossStudioWindow activeProject="ndn_lite_nRF52840_example" fileDialogDefaultFilter="" autoConnectTarget="J-Link" buildConfiguration="Debug" debugSearchFileMap="C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 4.12/source/thumb_crt0.s&#xa;&#xa;C:/Users/Rena Li/Desktop/nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/ses_startup_nrf52840.s&#xa;&#xa;C:/Users/Rena Li/Desktop/nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/ses_startup_nrf_common.s&#xa;" fileDialogInitialDirectory="C:/Users/edwar/Desktop/ndn-lite-work/ndn-lite/security" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <ARMCrossStudioWindow activeProject="ndn_lite_nRF52840_example" fileDialogDefaultFilter="" autoConnectTarget="J-Link" buildConfiguration="Debug" debugSearchFileMap="C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 4.12/source/thumb_crt0.s&#xa;&#xa;C:/Users/Rena Li/Desktop/nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/ses_startup_nrf52840.s&#xa;&#xa;C:/Users/Rena Li/Desktop/nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/ses_startup_nrf_common.s&#xa;" fileDialogInitialDirectory="C:/Users/edwar/Desktop/ndn-lite-work/ndn-lite-application-for-nRF52840-BLE_version/Application" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>

@@ -46,17 +46,6 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-gap.o: \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nrf_assert.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-consts.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-error-check.h \
- c:\users\edwar\desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\logger.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stdio.h \
- ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log.h \
- ../../nRF5_SDK_15.2.0_9412b96/components/libraries/experimental_section_vars/nrf_section.h \
- ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/nordic_common.h \
- ../../nRF5_SDK_15.2.0_9412b96/components/libraries/strerror/nrf_strerror.h \
- ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_errors.h \
- ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/src/nrf_log_internal.h \
- ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_util.h \
- ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_instance.h \
- ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_types.h \
- ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log_types.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_error.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/stdio.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_error_weak.h

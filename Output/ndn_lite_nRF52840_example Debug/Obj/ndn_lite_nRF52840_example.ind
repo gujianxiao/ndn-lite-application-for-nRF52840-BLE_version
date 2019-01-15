@@ -201,7 +201,7 @@
 "Output/ndn_lite_nRF52840_example Debug/Obj/nrf_sdh_soc.o"
 "Output/ndn_lite_nRF52840_example Debug/Obj/main.o"
 "Output/ndn_lite_nRF52840_example Debug/Obj/hardcoded-experimentation.o"
-"Output/ndn_lite_nRF52840_example Debug/Obj/sign-on-basic-tlv-helpers.o"
+"Output/ndn_lite_nRF52840_example Debug/Obj/print-helper.o"
 "Output/ndn_lite_nRF52840_example Debug/Obj/sign-on-basic-sec-impl.o"
 "Output/ndn_lite_nRF52840_example Debug/Obj/sign-on-basic-ecc-256-sec.o"
 "Output/ndn_lite_nRF52840_example Debug/Obj/sign-on-basic-client.o"

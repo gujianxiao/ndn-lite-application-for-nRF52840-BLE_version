@@ -18,6 +18,7 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/ndn-lite-default-aes-impl.o: \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/__crossworks.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\security\detail/default-backend/sec-lib/tinycrypt/tc_ecc.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\security\detail/default-backend/sec-lib/micro-ecc/uECC.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\ndn-constants.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\security\detail/default-backend/ndn-lite-default-hmac-impl.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\ndn-constants.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/string.h

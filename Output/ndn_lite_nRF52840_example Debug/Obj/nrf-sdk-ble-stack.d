@@ -47,7 +47,7 @@ Output/ndn_lite_nRF52840_example\ Debug/Obj/nrf-sdk-ble-stack.o: \
  C:\Users\edwar\Desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-stack\nrf-sdk-ble-stack.h \
  C:\Users\edwar\Desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-stack\nrf-sdk-ble-stack-defs.h \
  c:\users\edwar\desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-sdk-ble-consts.h \
- c:\users\edwar\desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\logger.h \
+ c:\users\edwar\desktop\ndn-lite-work\ndn-lite\adaptation\ndn-nrf-ble-adaptation\nrf-logger.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/log/nrf_log.h \
  ../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.10/include/string.h \
