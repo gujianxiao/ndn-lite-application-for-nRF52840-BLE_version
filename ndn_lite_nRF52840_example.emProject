@@ -308,203 +308,241 @@
       <file file_name="Application/print-helper.h" />
     </folder>
     <folder Name="ndn-lite">
-      <file file_name="../ndn-lite/ndn-constants.h" />
-      <file file_name="../ndn-lite/ndn-enums.h" />
-      <file file_name="../ndn-lite/ndn-error-code.h" />
-      <file file_name="../ndn-lite/ndn-service.h" />
       <folder Name="app-support">
-        <folder Name="bootstrapping">
-          <folder Name="secure-sign-on">
-            <folder Name="security">
-              <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on/security/sign-on-basic-sec-consts.h" />
-              <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on/security/sign-on-basic-sec-impl.c" />
-              <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on/security/sign-on-basic-sec-impl.h" />
+        <folder Name="secure-sign-on">
+          <folder Name="security">
+            <file file_name="../../ndn-lite/app-support/secure-sign-on/security/sign-on-basic-sec-consts.h" />
+            <file file_name="../../ndn-lite/app-support/secure-sign-on/security/sign-on-basic-sec-impl.c" />
+            <file file_name="../../ndn-lite/app-support/secure-sign-on/security/sign-on-basic-sec-impl.h" />
+          </folder>
+          <folder Name="variants">
+            <folder Name="ecc_256">
+              <file file_name="../../ndn-lite/app-support/secure-sign-on/variants/ecc_256/sign-on-basic-ecc-256-consts.h" />
+              <file file_name="../../ndn-lite/app-support/secure-sign-on/variants/ecc_256/sign-on-basic-ecc-256-sec.c" />
+              <file file_name="../../ndn-lite/app-support/secure-sign-on/variants/ecc_256/sign-on-basic-ecc-256-sec.h" />
             </folder>
-            <folder Name="variants">
-              <folder Name="ecc_256">
-                <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on/variants/ecc_256/sign-on-basic-ecc-256-consts.h" />
-                <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on/variants/ecc_256/sign-on-basic-ecc-256-sec.c" />
-                <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on/variants/ecc_256/sign-on-basic-ecc-256-sec.h" />
-              </folder>
-            </folder>
-            <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on/sign-on-basic-client.c" />
-            <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on/sign-on-basic-client.h" />
-            <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on/sign-on-basic-client-consts.h" />
-            <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on/sign-on-basic-consts.h" />
-            <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on/sign-on-basic-impl-consts.h" />
-            <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on/sign-on-basic-sec-intf-setter.c" />
-            <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on/sign-on-basic-sec-intf-setter.h" />
           </folder>
-          <folder Name="secure-sign-on-nrf-sdk-ble">
-            <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on-nrf-sdk-ble/sign-on-basic-client-nrf-sdk-ble.c" />
-            <file file_name="../ndn-lite/app-support/bootstrapping/secure-sign-on-nrf-sdk-ble/sign-on-basic-client-nrf-sdk-ble.h" />
-          </folder>
+          <file file_name="../../ndn-lite/app-support/secure-sign-on/sign-on-basic-client.c" />
+          <file file_name="../../ndn-lite/app-support/secure-sign-on/sign-on-basic-client.h" />
+          <file file_name="../../ndn-lite/app-support/secure-sign-on/sign-on-basic-client-consts.h" />
+          <file file_name="../../ndn-lite/app-support/secure-sign-on/sign-on-basic-consts.h" />
+          <file file_name="../../ndn-lite/app-support/secure-sign-on/sign-on-basic-impl-consts.h" />
+          <file file_name="../../ndn-lite/app-support/secure-sign-on/sign-on-basic-sec-intf-setter.c" />
+          <file file_name="../../ndn-lite/app-support/secure-sign-on/sign-on-basic-sec-intf-setter.h" />
         </folder>
-        <file file_name="../ndn-lite/app-support/access-control.c" />
-        <file file_name="../ndn-lite/app-support/access-control.h" />
-        <file file_name="../ndn-lite/app-support/bootstrapping.h" />
-        <file file_name="../ndn-lite/app-support/service-discovery.c" />
-        <file file_name="../ndn-lite/app-support/service-discovery.h" />
-      </folder>
-      <folder Name="adaptation">
-        <folder Name="ndn-nrf-ble-adaptation">
-          <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-consts.h" />
-          <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-error-check.h" />
-          <folder Name="nrf-sdk-ble-advertising">
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-advertising/nrf-sdk-ble-adv.c" />
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-advertising/nrf-sdk-ble-adv.h" />
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-advertising/nrf-sdk-ble-adv-defs.h" />
-          </folder>
-          <folder Name="nrf-sdk-ble-conn-params">
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-conn-params/nrf-sdk-ble-conn-params.c" />
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-conn-params/nrf-sdk-ble-conn-params.h" />
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-conn-params/nrf-sdk-ble-conn-params-defs.h" />
-          </folder>
-          <folder Name="nrf-sdk-ble-gap">
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-gap/nrf-sdk-ble-gap.c" />
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-gap/nrf-sdk-ble-gap.h" />
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-gap/nrf-sdk-ble-gap-defs.h" />
-          </folder>
-          <folder Name="nrf-sdk-ble-gatt">
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-gatt/nrf-sdk-ble-gatt.c" />
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-gatt/nrf-sdk-ble-gatt.h" />
-          </folder>
-          <folder Name="nrf-sdk-ndn-lite-ble-unicast-transport">
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-ndn-lite-ble-unicast-transport/nrf-sdk-ble-ndn-lite-ble-unicast-service.c" />
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-ndn-lite-ble-unicast-transport/nrf-sdk-ble-ndn-lite-ble-unicast-service.h" />
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-ndn-lite-ble-unicast-transport/nrf-sdk-ble-ndn-lite-ble-unicast-transport.c" />
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-ndn-lite-ble-unicast-transport/nrf-sdk-ble-ndn-lite-ble-unicast-transport.h" />
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-ndn-lite-ble-unicast-transport/nrf-sdk-ble-ndn-lite-ble-unicast-transport-defs.h" />
-          </folder>
-          <folder Name="nrf-sdk-ble-scanning">
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-scanning/nrf-sdk-ble-scan.c" />
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-scanning/nrf-sdk-ble-scan.h" />
-          </folder>
-          <folder Name="nrf-sdk-ble-stack">
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-stack/nrf-sdk-ble-stack.c" />
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-stack/nrf-sdk-ble-stack.h" />
-            <file file_name="../ndn-lite/adaptation/ndn-nrf-ble-adaptation/nrf-sdk-ble-stack/nrf-sdk-ble-stack-defs.h" />
-          </folder>
-        </folder>
+        <file file_name="../../ndn-lite/app-support/access-control.c" />
+        <file file_name="../../ndn-lite/app-support/access-control.h" />
+        <file file_name="../../ndn-lite/app-support/service-discovery.c" />
+        <file file_name="../../ndn-lite/app-support/service-discovery.h" />
       </folder>
       <folder Name="encode">
-        <file file_name="../ndn-lite/encode/data.c" />
-        <file file_name="../ndn-lite/encode/data.h" />
-        <file file_name="../ndn-lite/encode/decoder.h" />
-        <file file_name="../ndn-lite/encode/encoder.h" />
-        <file file_name="../ndn-lite/encode/fragmentation-support.h" />
-        <file file_name="../ndn-lite/encode/interest.c" />
-        <file file_name="../ndn-lite/encode/interest.h" />
-        <file file_name="../ndn-lite/encode/metainfo.c" />
-        <file file_name="../ndn-lite/encode/metainfo.h" />
-        <file file_name="../ndn-lite/encode/name.c" />
-        <file file_name="../ndn-lite/encode/name.h" />
-        <file file_name="../ndn-lite/encode/name-component.c" />
-        <file file_name="../ndn-lite/encode/name-component.h" />
-        <file file_name="../ndn-lite/encode/signature.c" />
-        <file file_name="../ndn-lite/encode/signature.h" />
-        <file file_name="../ndn-lite/encode/signed-interest.c" />
-        <file file_name="../ndn-lite/encode/signed-interest.h" />
-        <file file_name="../ndn-lite/encode/tlv.h" />
+        <file file_name="../../ndn-lite/encode/data.c" />
+        <file file_name="../../ndn-lite/encode/data.h" />
+        <file file_name="../../ndn-lite/encode/decoder.h" />
+        <file file_name="../../ndn-lite/encode/encoder.h" />
+        <file file_name="../../ndn-lite/encode/forwarder-helper.c" />
+        <file file_name="../../ndn-lite/encode/forwarder-helper.h" />
+        <file file_name="../../ndn-lite/encode/fragmentation-support.h" />
+        <file file_name="../../ndn-lite/encode/interest.c" />
+        <file file_name="../../ndn-lite/encode/interest.h" />
+        <file file_name="../../ndn-lite/encode/key-storage.c" />
+        <file file_name="../../ndn-lite/encode/key-storage.h" />
+        <file file_name="../../ndn-lite/encode/metainfo.c" />
+        <file file_name="../../ndn-lite/encode/metainfo.h" />
+        <file file_name="../../ndn-lite/encode/name.c" />
+        <file file_name="../../ndn-lite/encode/name.h" />
+        <file file_name="../../ndn-lite/encode/name-component.c" />
+        <file file_name="../../ndn-lite/encode/name-component.h" />
+        <file file_name="../../ndn-lite/encode/ndn-rule-storage.c" />
+        <file file_name="../../ndn-lite/encode/ndn-rule-storage.h" />
+        <file file_name="../../ndn-lite/encode/signature.c" />
+        <file file_name="../../ndn-lite/encode/signature.h" />
+        <file file_name="../../ndn-lite/encode/signed-interest.c" />
+        <file file_name="../../ndn-lite/encode/signed-interest.h" />
+        <file file_name="../../ndn-lite/encode/tlv.h" />
+        <folder Name="trust-schema">
+          <file file_name="../../ndn-lite/encode/trust-schema/ndn-trust-schema-common.h" />
+          <file file_name="../../ndn-lite/encode/trust-schema/ndn-trust-schema-pattern.c" />
+          <file file_name="../../ndn-lite/encode/trust-schema/ndn-trust-schema-pattern.h" />
+          <file file_name="../../ndn-lite/encode/trust-schema/ndn-trust-schema-pattern-component.c" />
+          <file file_name="../../ndn-lite/encode/trust-schema/ndn-trust-schema-pattern-component.h" />
+          <file file_name="../../ndn-lite/encode/trust-schema/ndn-trust-schema-rule.c" />
+          <file file_name="../../ndn-lite/encode/trust-schema/ndn-trust-schema-rule.h" />
+        </folder>
       </folder>
       <folder Name="face">
-        <file file_name="../ndn-lite/face/direct-face.c" />
-        <file file_name="../ndn-lite/face/direct-face.h" />
-        <file file_name="../ndn-lite/face/dummy-face.c" />
-        <file file_name="../ndn-lite/face/dummy-face.h" />
-        <file file_name="../ndn-lite/face/ndn-nrf-ble-face.c" />
-        <file file_name="../ndn-lite/face/ndn-nrf-ble-face.h" />
+        <file file_name="../../ndn-lite/face/dummy-face.c" />
+        <file file_name="../../ndn-lite/face/dummy-face.h" />
       </folder>
       <folder Name="forwarder">
-        <file file_name="../ndn-lite/forwarder/face.c" />
-        <file file_name="../ndn-lite/forwarder/face.h" />
-        <file file_name="../ndn-lite/forwarder/fib.h" />
-        <file file_name="../ndn-lite/forwarder/forwarder.c" />
-        <file file_name="../ndn-lite/forwarder/forwarder.h" />
-        <file file_name="../ndn-lite/forwarder/memory-pool.c" />
-        <file file_name="../ndn-lite/forwarder/memory-pool.h" />
-        <file file_name="../ndn-lite/forwarder/pit.c" />
-        <file file_name="../ndn-lite/forwarder/pit.h" />
+        <file file_name="../../ndn-lite/forwarder/callback-funcs.h" />
+        <file file_name="../../ndn-lite/forwarder/face.h" />
+        <file file_name="../../ndn-lite/forwarder/face-table.c" />
+        <file file_name="../../ndn-lite/forwarder/face-table.h" />
+        <file file_name="../../ndn-lite/forwarder/fib.c" />
+        <file file_name="../../ndn-lite/forwarder/fib.h" />
+        <file file_name="../../ndn-lite/forwarder/forwarder.c" />
+        <file file_name="../../ndn-lite/forwarder/forwarder.h" />
+        <file file_name="../../ndn-lite/forwarder/name-tree.c" />
+        <file file_name="../../ndn-lite/forwarder/name-tree.h" />
+        <file file_name="../../ndn-lite/forwarder/pit.c" />
+        <file file_name="../../ndn-lite/forwarder/pit.h" />
       </folder>
       <folder Name="security">
-        <file file_name="../ndn-lite/security/ndn-lite-aes.c" />
-        <file file_name="../ndn-lite/security/ndn-lite-aes.h" />
-        <file file_name="../ndn-lite/security/ndn-lite-ecc.c" />
-        <file file_name="../ndn-lite/security/ndn-lite-ecc.h" />
-        <file file_name="../ndn-lite/security/ndn-lite-hmac.c" />
-        <file file_name="../ndn-lite/security/ndn-lite-hmac.h" />
-        <file file_name="../ndn-lite/security/ndn-lite-rng.h" />
-        <file file_name="../ndn-lite/security/ndn-lite-sec-config.h" />
-        <file file_name="../ndn-lite/security/ndn-lite-sha.c" />
-        <file file_name="../ndn-lite/security/ndn-lite-sha.h" />
+        <file file_name="../../ndn-lite/security/ndn-lite-aes.c" />
+        <file file_name="../../ndn-lite/security/ndn-lite-aes.h" />
+        <file file_name="../../ndn-lite/security/ndn-lite-crypto-key.h" />
+        <file file_name="../../ndn-lite/security/ndn-lite-ecc.c" />
+        <file file_name="../../ndn-lite/security/ndn-lite-ecc.h" />
+        <file file_name="../../ndn-lite/security/ndn-lite-hmac.c" />
+        <file file_name="../../ndn-lite/security/ndn-lite-hmac.h" />
+        <file file_name="../../ndn-lite/security/ndn-lite-rng.c" />
+        <file file_name="../../ndn-lite/security/ndn-lite-rng.h" />
+        <file file_name="../../ndn-lite/security/ndn-lite-sec-config.c" />
+        <file file_name="../../ndn-lite/security/ndn-lite-sec-config.h" />
+        <file file_name="../../ndn-lite/security/ndn-lite-sec-utils.c" />
+        <file file_name="../../ndn-lite/security/ndn-lite-sec-utils.h" />
+        <file file_name="../../ndn-lite/security/ndn-lite-sha.c" />
+        <file file_name="../../ndn-lite/security/ndn-lite-sha.h" />
+        <file file_name="../../ndn-lite/security/ndn-trust-schema.c" />
+        <file file_name="../../ndn-lite/security/ndn-trust-schema.h" />
         <folder Name="detail">
           <folder Name="default-backend">
-            <file file_name="../ndn-lite/security/detail/default-backend/ndn-lite-default-aes-impl.c" />
-            <file file_name="../ndn-lite/security/detail/default-backend/ndn-lite-default-aes-impl.h" />
-            <file file_name="../ndn-lite/security/detail/default-backend/ndn-lite-default-ecc-impl.c" />
-            <file file_name="../ndn-lite/security/detail/default-backend/ndn-lite-default-ecc-impl.h" />
-            <file file_name="../ndn-lite/security/detail/default-backend/ndn-lite-default-hmac-impl.c" />
-            <file file_name="../ndn-lite/security/detail/default-backend/ndn-lite-default-hmac-impl.h" />
-            <file file_name="../ndn-lite/security/detail/default-backend/ndn-lite-default-sha-impl.c" />
-            <file file_name="../ndn-lite/security/detail/default-backend/ndn-lite-default-sha-impl.h" />
             <folder Name="sec-lib">
               <folder Name="micro-ecc">
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/asm_arm.inc" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/asm_arm_mult_square.inc" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/asm_avr.inc" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/asm_avr_mult_square.inc" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/curve-specific.inc" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/platform-specific.inc" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/types.h" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/uECC.c" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/uECC.h" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/uECC_vli.h" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/asm_arm.inc" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/asm_arm_mult_square.inc" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/asm_avr.inc" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/asm_avr_mult_square.inc" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/curve-specific.inc" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/Makefile" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/platform-specific.inc" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/types.h" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/uECC.c" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/uECC.h" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/micro-ecc/uECC_vli.h" />
               </folder>
               <folder Name="tinycrypt">
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_aes.h" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_aes_decrypt.c" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_aes_encrypt.c" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_cbc_mode.c" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_cbc_mode.h" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ccm_mode.c" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ccm_mode.h" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_cmac_mode.c" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_cmac_mode.h" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_constants.h" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ctr_mode.c" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ctr_mode.h" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ctr_prng.c" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ctr_prng.h" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ecc.c" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ecc.h" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ecc_dh.c" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ecc_dh.h" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ecc_dsa.c" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ecc_dsa.h" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ecc_platform_specific.c" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ecc_platform_specific.h" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_hmac.c" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_hmac.h" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_hmac_prng.c" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_hmac_prng.h" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_sha256.c" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_sha256.h" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_utils.c" />
-                <file file_name="../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_utils.h" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_aes.h" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_aes_decrypt.c" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_aes_encrypt.c" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_cbc_mode.c" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_cbc_mode.h" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ccm_mode.c" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ccm_mode.h" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_cmac_mode.c" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_cmac_mode.h" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_constants.h" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ctr_mode.c" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ctr_mode.h" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ctr_prng.c" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ctr_prng.h" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ecc.c" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ecc.h" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ecc_dh.c" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ecc_dh.h" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ecc_dsa.c" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ecc_dsa.h" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ecc_platform_specific.c" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_ecc_platform_specific.h" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_hmac.c" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_hmac.h" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_hmac_prng.c" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_hmac_prng.h" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_sha256.c" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_sha256.h" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_utils.c" />
+                <file file_name="../../ndn-lite/security/detail/default-backend/sec-lib/tinycrypt/tc_utils.h" />
               </folder>
             </folder>
-          </folder>
-          <folder Name="nordic-sdk-nrf-backend">
-            <file file_name="../ndn-lite/security/detail/nordic-sdk-nrf-backend/ndn-lite-nrf-crypto-rng-impl.c" />
-            <file file_name="../ndn-lite/security/detail/nordic-sdk-nrf-backend/ndn-lite-nrf-crypto-rng-impl.h" />
-            <file file_name="../ndn-lite/security/detail/nordic-sdk-nrf-backend/ndn-lite-nrf-crypto-sha-impl.c" />
-            <file file_name="../ndn-lite/security/detail/nordic-sdk-nrf-backend/ndn-lite-nrf-crypto-sha-impl.h" />
+            <file file_name="../../ndn-lite/security/detail/default-backend/ndn-lite-default-aes-impl.c" />
+            <file file_name="../../ndn-lite/security/detail/default-backend/ndn-lite-default-aes-impl.h" />
+            <file file_name="../../ndn-lite/security/detail/default-backend/ndn-lite-default-ecc-impl.c" />
+            <file file_name="../../ndn-lite/security/detail/default-backend/ndn-lite-default-ecc-impl.h" />
+            <file file_name="../../ndn-lite/security/detail/default-backend/ndn-lite-default-hmac-impl.c" />
+            <file file_name="../../ndn-lite/security/detail/default-backend/ndn-lite-default-hmac-impl.h" />
+            <file file_name="../../ndn-lite/security/detail/default-backend/ndn-lite-default-sha-impl.c" />
+            <file file_name="../../ndn-lite/security/detail/default-backend/ndn-lite-default-sha-impl.h" />
           </folder>
         </folder>
-        <file file_name="../ndn-lite/security/ndn-lite-sec-utils.h" />
-        <file file_name="../ndn-lite/security/ndn-lite-sec-utils.c" />
-        <file file_name="../ndn-lite/security/ndn-lite-rng.c" />
-        <file file_name="../ndn-lite/security/ndn-lite-sec-config.c" />
+      </folder>
+      <folder Name="util">
+        <file file_name="../../ndn-lite/util/bit-operations.h" />
+        <file file_name="../../ndn-lite/util/memory-pool.c" />
+        <file file_name="../../ndn-lite/util/memory-pool.h" />
+        <file file_name="../../ndn-lite/util/msg-queue.c" />
+        <file file_name="../../ndn-lite/util/msg-queue.h" />
+        <file file_name="../../ndn-lite/util/re.c" />
+        <file file_name="../../ndn-lite/util/re.h" />
+        <file file_name="../../ndn-lite/util/uniform-time.h" />
+      </folder>
+      <file file_name="../../ndn-lite/ndn-constants.h" />
+      <file file_name="../../ndn-lite/ndn-enums.h" />
+      <file file_name="../../ndn-lite/ndn-error-code.h" />
+      <file file_name="../../ndn-lite/ndn-services.h" />
+    </folder>
+    <folder Name="adaptation">
+      <folder Name="security">
+        <folder Name="detail">
+          <folder Name="nrf-crypto-backend">
+            <file file_name="../../adaptation/security/detail/nrf-crypto-backend/ndn-lite-rng-nrf-crypto-impl.c" />
+            <file file_name="../../adaptation/security/detail/nrf-crypto-backend/ndn-lite-rng-nrf-crypto-impl.h" />
+            <file file_name="../../adaptation/security/detail/nrf-crypto-backend/ndn-lite-sha256-nrf-crypto-impl.c" />
+            <file file_name="../../adaptation/security/detail/nrf-crypto-backend/ndn-lite-sha256-nrf-crypto-impl.h" />
+          </folder>
+        </folder>
+        <file file_name="../../adaptation/security/ndn-lite-nrf-crypto-sec-config.c" />
+        <file file_name="../../adaptation/security/ndn-lite-nrf-crypto-sec-config.h" />
+      </folder>
+      <folder Name="face">
+        <file file_name="../../adaptation/face/ndn-nrf-ble-face.c" />
+        <file file_name="../../adaptation/face/ndn-nrf-ble-face.h" />
+      </folder>
+      <folder Name="app-support">
+        <folder Name="secure-sign-on-nrf-sdk-ble">
+          <file file_name="../../adaptation/app-support/secure-sign-on-nrf-sdk-ble/sign-on-basic-client-nrf-sdk-ble.c" />
+          <file file_name="../../adaptation/app-support/secure-sign-on-nrf-sdk-ble/sign-on-basic-client-nrf-sdk-ble.h" />
+        </folder>
+      </folder>
+      <folder Name="nrf-sdk-ble">
+        <file file_name="../../adaptation/nrf-sdk-ble/logger.h" />
+        <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-consts.h" />
+        <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-error-check.h" />
+        <folder Name="nrf-sdk-ble-advertising">
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-advertising/nrf-sdk-ble-adv.c" />
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-advertising/nrf-sdk-ble-adv.h" />
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-advertising/nrf-sdk-ble-adv-defs.h" />
+        </folder>
+        <folder Name="nrf-sdk-ble-conn-params">
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-conn-params/nrf-sdk-ble-conn-params.c" />
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-conn-params/nrf-sdk-ble-conn-params.h" />
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-conn-params/nrf-sdk-ble-conn-params-defs.h" />
+        </folder>
+        <folder Name="nrf-sdk-ble-gap">
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-gap/nrf-sdk-ble-gap.c" />
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-gap/nrf-sdk-ble-gap.h" />
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-gap/nrf-sdk-ble-gap-defs.h" />
+        </folder>
+        <folder Name="nrf-sdk-ble-gatt">
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-gatt/nrf-sdk-ble-gatt.c" />
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-gatt/nrf-sdk-ble-gatt.h" />
+        </folder>
+        <folder Name="nrf-sdk-ble-ndn-lite-ble-unicast-transport">
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-ndn-lite-ble-unicast-transport/nrf-sdk-ble-ndn-lite-ble-unicast-service.c" />
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-ndn-lite-ble-unicast-transport/nrf-sdk-ble-ndn-lite-ble-unicast-service.h" />
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-ndn-lite-ble-unicast-transport/nrf-sdk-ble-ndn-lite-ble-unicast-transport.c" />
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-ndn-lite-ble-unicast-transport/nrf-sdk-ble-ndn-lite-ble-unicast-transport.h" />
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-ndn-lite-ble-unicast-transport/nrf-sdk-ble-ndn-lite-ble-unicast-transport-defs.h" />
+        </folder>
+        <folder Name="nrf-sdk-ble-scanning">
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-scanning/nrf-sdk-ble-scan.c" />
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-scanning/nrf-sdk-ble-scan.h" />
+        </folder>
+        <folder Name="nrf-sdk-ble-stack">
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-stack/nrf-sdk-ble-stack.c" />
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-stack/nrf-sdk-ble-stack.h" />
+          <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-stack/nrf-sdk-ble-stack-defs.h" />
+        </folder>
       </folder>
     </folder>
   </project>

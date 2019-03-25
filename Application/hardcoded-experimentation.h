@@ -12,8 +12,8 @@
 #define HARDCODED_EXPERIMENTATION_H
 
 #include <stdint.h>
-#include "../../ndn-lite/app-support/bootstrapping/secure-sign-on/sign-on-basic-client-consts.h"
-#include "../../ndn-lite/app-support/bootstrapping/secure-sign-on/variants/ecc_256/sign-on-basic-ecc-256-consts.h"
+#include "../../ndn-lite/app-support/secure-sign-on/sign-on-basic-client-consts.h"
+#include "../../ndn-lite/app-support/secure-sign-on/variants/ecc_256/sign-on-basic-ecc-256-consts.h"
 
 //#define BOARD_1
 #define BOARD_2
