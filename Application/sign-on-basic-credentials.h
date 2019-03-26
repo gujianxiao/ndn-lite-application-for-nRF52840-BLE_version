@@ -8,8 +8,8 @@
  * See AUTHORS.md for complete list of NDN IOT PKG authors and contributors.
  */
 
-#ifndef HARDCODED_EXPERIMENTATION_H
-#define HARDCODED_EXPERIMENTATION_H
+#ifndef SIGN_ON_BASIC_CREDENTIALS_H
+#define SIGN_ON_BASIC_CREDENTIALS_H
 
 #include <stdint.h>
 #include "../../ndn-lite/app-support/secure-sign-on/sign-on-basic-client-consts.h"
@@ -32,4 +32,4 @@ extern const uint8_t BOOTSTRAP_ECC_PUBLIC_NO_POINT_IDENTIFIER[64];
 
 extern const uint8_t SECURE_SIGN_ON_CODE[SIGN_ON_BASIC_ECC_256_SECURE_SIGN_ON_CODE_LENGTH];
 
-#endif // HARDCODED_EXPERIMENTATION_H
+#endif // SIGN_ON_BASIC_CREDENTIALS_H

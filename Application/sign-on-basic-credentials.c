@@ -8,7 +8,7 @@
  * See AUTHORS.md for complete list of NDN IOT PKG authors and contributors.
  */
 
-#include "hardcoded-experimentation.h"
+#include "sign-on-basic-credentials.h"
 
 #ifdef BOARD_1
 const uint8_t DEVICE_IDENTIFIER[SIGN_ON_BASIC_CLIENT_DEVICE_IDENTIFIER_MAX_LENGTH] = {
