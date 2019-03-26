@@ -546,6 +546,9 @@
           <file file_name="../../adaptation/nrf-sdk-ble/nrf-sdk-ble-stack/nrf-sdk-ble-stack-defs.h" />
         </folder>
       </folder>
+      <file file_name="../../adaptation/uniform-time.c" />
+      <file file_name="../../adaptation/ndn-lite-over-nrf-sdk-init.c" />
+      <file file_name="../../adaptation/ndn-lite-over-nrf-sdk-init.h" />
     </folder>
   </project>
 </solution>

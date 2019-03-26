@@ -4,11 +4,15 @@
 
 #include "print-helper.h"
 
+// includes for nrf sdk
+#include "nrf_crypto.h"
+
 // includes for sign on client ble
 #include "../../adaptation/app-support/secure-sign-on-nrf-sdk-ble/sign-on-basic-client-nrf-sdk-ble.h" // sign on basic client implemented with nrf sdk ble
 #include "sign-on-basic-credentials.h" // hardcoded credentials for the sign on basic client
 
 // includes for adaptation between ndn-lite and nrf sdk
+#include "../../adaptation/ndn-lite-over-nrf-sdk-init.h"
 #include "../../adaptation/face/ndn-nrf-ble-face.h" // ndn-lite ble face using nrf sdk ble as a backend
 #include "../../adaptation/security/ndn-lite-nrf-crypto-sec-config.h" // security configuration for nrf-sdk-specific security functions
 
@@ -18,41 +22,14 @@
 #include "../../ndn-lite/encode/interest.h"
 #include "../../ndn-lite/forwarder/forwarder.h"
 #include "../../ndn-lite/security/ndn-lite-sec-utils.h"
+#include "../../ndn-lite/util/uniform-time.h"
 
 // includes for manipulating led's timers with nrf sdk
 #include "nrf-sdk-led.h"
 
-//static uint8_t schematrust_flag = 1;
-//
-
-//// defines for ndn standalone library
-//ndn_direct_face_t *m_face;
-//uint16_t m_face_id_direct = 2;
-//uint16_t m_face_id_ble = 3;
-//ndn_nrf_ble_face_t *m_ndn_nrf_ble_face;
-//
-//// Callback for when interest for certificate times out.
-//int m_interest_timeout_callback(const uint8_t *interest, uint32_t interest_size) {
-//  APP_LOG("Interest timeout callback was triggered.\n");
-//  return 0;
-//}
-//
-//// Callback for when we receive data for the interest we send for the certificate.
-//int m_on_data_callback(const uint8_t *data, uint32_t data_size) {
-//  APP_LOG("On data callback was triggered.\n");
-//
-//  ndn_data_t recvd_data;
-//
-//  // Commented this out until the security implementation in ndn standalone is
-//  // made generic to prevent conflicts of security libraries.
-//  // The call to ndn_data_tlv_decode_digest_verify depends on the security
-//  // implementation inside of ../../ndn-lite, which is why I have it commented out here.
-//  //  if (ndn_data_tlv_decode_digest_verify(&recvd_data, data, data_size)) {
-//  //    APP_LOG("Successfully decoded received data.\n");
-//  //  }
-//
-//  return 0;
-//}
+// defines for ndn standalone library
+uint16_t m_face_id_ble = 3;
+ndn_nrf_ble_face_t *m_ndn_nrf_ble_face;
 
 // Callback for when sign on has completed.
 void m_on_sign_on_completed_callback(int result_code) {
@@ -115,67 +92,7 @@ void m_on_sign_on_completed_callback(int result_code) {
     APP_LOG("Sign on failed, error code: %d\n", result_code);
   }
 }
-//
-//int on_trustInterest(const uint8_t *interest, uint32_t interest_size) {
-//  APP_LOG("Get into on_trustInterest... Start to decode received Interest\n");
-//  blink_led(3);
-//  //initiate the name prefix of different interest here
-//  ndn_name_t schema_prefix;
-//  ndn_name_t schema_prefix2;
-//#ifdef BOARD_1
-//  char schema_string[] = "/NDN-IoT/TrustChange/Board1/ControllerOnly";
-//  char schema_string2[] = "/NDN-IoT/TrustChange/Board1/AllNode";
-//#endif
-//#ifdef BOARD_2
-//  char schema_string[] = "/NDN-IoT/TrustChange/Board2/ControllerOnly";
-//  char schema_string2[] = "/NDN-IoT/TrustChange/Board2/AllNode";
-//#endif
-//  ndn_name_from_string(&schema_prefix, schema_string, sizeof(schema_string));
-//  ndn_name_from_string(&schema_prefix2, schema_string2, sizeof(schema_string2));
-//
-//  ndn_interest_t check_interest;
-//  int result = ndn_interest_from_block(&check_interest, interest, interest_size);
-//  APP_LOG("compare results of controller only: %d\n", ndn_name_compare(&schema_prefix, &check_interest.name));
-//  APP_LOG("compare results of all nodes: %d\n", ndn_name_compare(&schema_prefix2, &check_interest.name));
-//
-//  if (ndn_name_compare(&check_interest.name, &schema_prefix) == 0) {
-//    APP_LOG("Get into on_trustInterest... Trust policy change to controller\n");
-//    schematrust_flag = 0;
-//    blink_led(4);
-//  }
-//
-//  if (ndn_name_compare(&check_interest.name, &schema_prefix2) == 0) {
-//    APP_LOG("Get into on_trustInterest... Trust policy change to all nodes\n");
-//    schematrust_flag = 1;
-//    blink_led(4);
-//  }
-//}
-//
-//int on_CMDInterest(const uint8_t *interest, uint32_t interest_size) {
-//  APP_LOG("Get into on_CMDInterest... Start to decode received Interest\n");
-//  //initiate the name prefix of different interest here
-//  ndn_name_t CMD_prefix;
-//#ifdef BOARD_1
-//  char CMD_string[] = "/NDN-IoT/Board1/SD_LED/ON";
-//#endif
-//#ifdef BOARD_2
-//  char CMD_string[] = "/NDN-IoT/Board2/SD_LED/ON";
-//#endif
-//  ndn_name_from_string(&CMD_prefix, CMD_string, sizeof(CMD_string));
-//
-//  ndn_interest_t check_interest;
-//  int result = ndn_interest_from_block(&check_interest, interest, interest_size);
-//
-//  if (ndn_name_compare(&check_interest.name, &CMD_prefix) == 0) {
-//    APP_LOG("Get into on_CMDtInterest... Received command to turn on LED\n");
-//
-//    if (schematrust_flag) {
-//      blink_led(1);
-//      APP_LOG("finish blink led 2");
-//    }
-//  }
-//}
-//
+
 ////timeout do nothing
 //int on_interest_timeout_callback(const uint8_t *interest, uint32_t interest_size) {
 //  (void)interest;
@@ -190,14 +107,24 @@ void m_on_sign_on_completed_callback(int result_code) {
 //  return 0;
 //}
 
+APP_TIMER_DEF(m_ndn_lite_timer_id);
+
+/**@brief Timeout handler for the ndn lite timer
+ */
+static void repeated_timer_handler(void * p_context)
+{
+    printf("The ndn lite timer reached its maximum count and reset.\n");
+}
+
 /**@brief Function for application main entry.
  */
 int main(void) {
 
   APP_LOG("Entered main function of main_board1.c\n");
-  
-  register_platform_security_init(ndn_lite_nrf_crypto_init);
-  ndn_security_init();
+
+  ndn_lite_over_nrf_sdk_startup();
+
+  ret_code_t err_code;
 
   //initialize the button and LED
   nrf_gpio_cfg_output(BSP_LED_0);                    //BSP_LED_0 is pin 13 in the nRF52840-DK. Configure pin 13 as standard output.
@@ -224,18 +151,21 @@ int main(void) {
       BOOTSTRAP_ECC_PUBLIC_NO_POINT_IDENTIFIER, sizeof(BOOTSTRAP_ECC_PUBLIC_NO_POINT_IDENTIFIER),
       BOOTSTRAP_ECC_PRIVATE, sizeof(BOOTSTRAP_ECC_PRIVATE),
       m_on_sign_on_completed_callback);
-//
-//  ret_code_t err_code;
-//
-//  // Initialize the crypto subsystem
-//  err_code = nrf_crypto_init();
-//  APP_ERROR_CHECK(err_code);
+
+  err_code = app_timer_init();
+  APP_ERROR_CHECK(err_code);
+  err_code = app_timer_create(&m_ndn_lite_timer_id,
+                              APP_TIMER_MODE_REPEATED,
+                              repeated_timer_handler);
+  APP_ERROR_CHECK(err_code);
+  err_code = app_timer_start(m_ndn_lite_timer_id, 0xFFFFFFFF, NULL);
+  APP_ERROR_CHECK(err_code);
+
+  for (int i = 0; i < 1000; i++) {
+    printf("inside init function: %d\n", app_timer_cnt_get());
+  }
 //
 //  APP_LOG("Secure sign-on application successfully started.\n");
-//  APP_LOG("Size of sign_on_basic_client_t structure: %d\n", sizeof(struct sign_on_basic_client_t));
-//
-//  // Initialize the ndn lite forwarder
-//  ndn_forwarder_init();
 //
 //  // Create the name for the certificate that we will have after sign-on.
 //  ndn_name_t dummy_interest_name;
