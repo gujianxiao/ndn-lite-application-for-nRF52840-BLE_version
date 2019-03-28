@@ -8,7 +8,7 @@
 #include "nrf_crypto.h"
 
 // includes for sign on client ble
-#include "../../adaptation/app-support/secure-sign-on-nrf-sdk-ble/sign-on-basic-client-nrf-sdk-ble.h" // sign on basic client implemented with nrf sdk ble
+#include "../../adaptation/app-support-adaptation/secure-sign-on-nrf-sdk-ble/sign-on-basic-client-nrf-sdk-ble.h" // sign on basic client implemented with nrf sdk ble
 #include "sign-on-basic-credentials.h" // hardcoded credentials for the sign on basic client
 
 // includes for adaptation between ndn-lite and nrf sdk
@@ -164,6 +164,8 @@ int main(void) {
   for (int i = 0; i < 1000; i++) {
     printf("inside init function: %d\n", app_timer_cnt_get());
   }
+  printf("done\n");
+
 //
 //  APP_LOG("Secure sign-on application successfully started.\n");
 //
