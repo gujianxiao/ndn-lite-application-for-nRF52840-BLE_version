@@ -9,7 +9,6 @@
 #include "nordic_common.h"
 #include "nrf.h"
 #include "app_error.h"
-#include "app_timer.h"
 #include "fds.h"
 #include "sensorsim.h"
 
@@ -21,17 +20,6 @@
 #include "bsp_btn_ble.h"
 
 #include "app_definitions.h"
-
-/**@brief Function for the Timer initialization.
- *
- * @details Initializes the timer module. This creates and starts application timers.
- */
-static void timers_init(void)
-{
-    // Initialize timer module.
-    ret_code_t err_code = app_timer_init();
-    APP_ERROR_CHECK(err_code);
-}
 
 /**@brief Function for putting the chip into sleep mode.
  *

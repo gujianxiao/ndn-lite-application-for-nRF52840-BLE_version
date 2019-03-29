@@ -561,7 +561,6 @@
       </folder>
       <file file_name="../../adaptation/ndn-lite-over-nrf-sdk-init.c" />
       <file file_name="../../adaptation/ndn-lite-over-nrf-sdk-init.h" />
-      <folder Name="alarm-adaptation" />
     </folder>
     <folder Name="nRF_802154">
       <file file_name="../../nRF-IEEE-802.15.4-radio-driver/src/fem/nrf_fem_control.c" />
