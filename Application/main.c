@@ -352,45 +352,61 @@ int main(void) {
   APP_LOG("\n");
 
   blink_led(3);
-//
-//  // Enter main loop.
-//  for (;;) {
-//    if (nrf_gpio_pin_read(BUTTON_1) == 0 && schematrust_flag) { // If button 1 is pressed (Active Low)
-//      nrf_gpio_pin_write(BSP_LED_0, 0);                         // Turn on LED
-//      APP_LOG("Button 1 pressed. schematrust_flag is %d\n", schematrust_flag);
-//      nrf_delay_ms(100); // for debouncing
-//    }
-//    if (nrf_gpio_pin_read(BUTTON_2) == 0) { // If button 2 is pressed (Active Low)
-//      nrf_gpio_pin_write(BSP_LED_0, 1);     // Turn off LED
-//      APP_LOG("Button 2 pressed.schematrust_flag is %d\n", schematrust_flag);
-//      nrf_delay_ms(100); // for debouncing
-//    }
-//    if (nrf_gpio_pin_read(BUTTON_3) == 0) { // If button 2 is pressed (Active Low)
-//      //send Interest here
-//      APP_LOG("Button 3 pressed. start to send Interest of turn on LED\n");
-//      //construct interest
-//      ndn_interest_t interest;
-//      ndn_interest_init(&interest);
-//#ifdef BOARD_1
-//      char name_string[] = "/NDN-IoT/Board2/SD_LED/ON";
-//#endif
-//#ifdef BOARD_2
-//      char name_string[] = "/NDN-IoT/Board1/SD_LED/ON";
-//#endif
-//      ndn_name_from_string(&interest.name, name_string, sizeof(name_string));
-//      uint8_t interest_block[256] = {0};
-//      ndn_encoder_t encoder;
-//      encoder_init(&encoder, interest_block, 256);
-//      ndn_interest_tlv_encode(&encoder, &interest);
-//      //send interest
-//      ndn_direct_face_express_interest(&interest.name,
-//          interest_block, encoder.offset,
-//          on_data_callback, on_interest_timeout_callback);
-//      ndn_face_send(&m_ndn_nrf_ble_face->intf, &interest.name, interest_block, encoder.offset);
-//      nrf_delay_ms(100); // for debouncing
-//    }
-//    //    idle_state_handle();
-//  }
+
+  // Enter main loop.
+  for (;;) {
+    if (nrf_gpio_pin_read(BUTTON_1) == 0 && schema_trust_flag) { // If button 1 is pressed (Active Low)
+      nrf_gpio_pin_write(BSP_LED_0, 0);                         // Turn on LED
+      APP_LOG("Button 1 pressed. schematrust_flag is %d\n", schema_trust_flag);
+      ndn_time_delay(100); // for debouncing
+    }
+    if (nrf_gpio_pin_read(BUTTON_2) == 0) { // If button 2 is pressed (Active Low)
+      nrf_gpio_pin_write(BSP_LED_0, 1);     // Turn off LED
+      APP_LOG("Button 2 pressed.schematrust_flag is %d\n", schema_trust_flag);
+      ndn_time_delay(100); // for debouncing
+    }
+    if (nrf_gpio_pin_read(BUTTON_3) == 0) { // If button 2 is pressed (Active Low)
+      //send Interest here
+      APP_LOG("Button 3 pressed. start to send Interest of turn on LED\n");
+      //construct interest
+      ndn_interest_t interest;
+      ndn_interest_init(&interest);
+#ifdef BOARD_1
+      char name_string[] = "/NDN-IoT/Board2/SD_LED/ON";
+#endif
+#ifdef BOARD_2
+      char name_string[] = "/NDN-IoT/Board1/SD_LED/ON";
+#endif
+      ret_val = ndn_name_from_string(&interest.name, name_string, sizeof(name_string));
+      if (ret_val != NDN_SUCCESS) {
+        APP_LOG("ndn_name_from_string failed, error code: %d\n", ret_val);
+        return -1;
+      }
+      uint8_t interest_block[256] = {0};
+      ndn_encoder_t encoder;
+      encoder_init(&encoder, interest_block, 256);
+      ret_val = ndn_interest_tlv_encode(&encoder, &interest);
+      if (ret_val != NDN_SUCCESS) {
+        APP_LOG("ndn_interest_tlv_encode failed, error code: %d\n", ret_val);
+        return -1;
+      }
+      //send interest
+      ret_val = ndn_forwarder_express_interest(
+                  encoder.output_value, encoder.offset,
+                  on_data, on_interest_timeout, NULL);
+      if (ret_val != NDN_SUCCESS) {
+        APP_LOG("ndn_forwarder_express_interest failed, error code: %d\n", ret_val);
+        return -1;
+      }
+      ret_val = ndn_face_send(&m_ndn_nrf_ble_face->intf, encoder.output_value, encoder.offset);
+      if (ret_val != NDN_SUCCESS) {
+        APP_LOG("ndn_face_send failed, error code: %d\n", ret_val);
+        return -1;
+      }
+      ndn_time_delay(100); // for debouncing
+    }
+    // idle_state_handle();
+  }
 }
 
 /**
