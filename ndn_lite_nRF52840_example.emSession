@@ -26,10 +26,14 @@
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;adaptation"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;adaptation;app-support-adaptation"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;adaptation;app-support-adaptation;secure-sign-on-nrf-sdk-ble"/>
+  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;adaptation;ble-adaptation"/>
+  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;adaptation;ble-adaptation;nrf-sdk-ble-scanning"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;adaptation;face"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;Application"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;Application;app-init-files"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite"/>
+  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;app-support"/>
+  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;app-support;secure-sign-on"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;encode"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;ndn-lite;forwarder"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;nRF_Libraries"/>
@@ -65,10 +69,15 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="131" useTextEdit="1" useBinaryEdit="0" left="0" path="Application/main.c" selected="1" top="207" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="139" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/app-support-adaptation/secure-sign-on-nrf-sdk-ble/sign-on-basic-client-nrf-sdk-ble.c" selected="0" top="127" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="45" y="109" useTextEdit="1" useBinaryEdit="0" left="0" path="Application/main.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="60" y="71" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/app-support-adaptation/secure-sign-on-nrf-sdk-ble/sign-on-basic-client-nrf-sdk-ble.c" selected="1" top="57" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="72" useTextEdit="1" useBinaryEdit="0" left="0" path="../../ndn-lite/encode/name.c" selected="0" top="60" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="120" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/face/ndn-nrf-ble-face.c" selected="0" top="122" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="58" y="18" useTextEdit="1" useBinaryEdit="0" left="0" path="../../ndn-lite/app-support/secure-sign-on/sign-on-basic-sec-intf-setter.h" selected="0" top="13" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="40" y="13" useTextEdit="1" useBinaryEdit="0" left="0" path="../../ndn-lite/app-support/secure-sign-on/sign-on-basic-client.h" selected="0" top="8" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="48" y="20" useTextEdit="1" useBinaryEdit="0" left="0" path="../../ndn-lite/app-support/secure-sign-on/sign-on-basic-sec-intf-setter.c" selected="0" top="13" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="4" y="34" useTextEdit="1" useBinaryEdit="0" left="0" path="../../ndn-lite/app-support/secure-sign-on/sign-on-basic-client.c" selected="0" top="32" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="16" y="66" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/ble-adaptation/nrf-sdk-ble-ndn-lite-ble-unicast-transport/nrf-sdk-ble-ndn-lite-ble-unicast-transport.h" selected="0" top="31" codecName="Default"/>
  </Files>
  <ARMCrossStudioWindow activeProject="ndn_lite_nRF52840_example" fileDialogDefaultFilter="" autoConnectTarget="J-Link" buildConfiguration="Debug" debugSearchFileMap="C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 4.12/source/thumb_crt0.s&#xa;&#xa;C:/Users/Rena Li/Desktop/nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/ses_startup_nrf52840.s&#xa;&#xa;C:/Users/Rena Li/Desktop/nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/ses_startup_nrf_common.s&#xa;" fileDialogInitialDirectory="C:/Users/Rena Li/Desktop/ndn-iot-package-over-nordic-sdk/adaptation/alarm-adaptation" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>

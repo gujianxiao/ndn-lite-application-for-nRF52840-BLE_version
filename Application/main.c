@@ -30,6 +30,7 @@
 #define ENCODER_BUFFER_SIZE 500
 
 // defines for ndn standalone library
+int schema_trust_flag = 0;
 uint16_t m_face_id_ble = 3;
 ndn_nrf_ble_face_t *m_ndn_nrf_ble_face;
 ndn_encoder_t m_sign_on_interest_name_encoder;
@@ -44,11 +45,73 @@ uint8_t m_board_to_board_prefix_encoded_buffer[ENCODER_BUFFER_SIZE];
 int on_schema_interest(const uint8_t* interest, uint32_t interest_size, void *userdata)
 {
   printf("on_schema_interest was triggered.\n");
+
+  blink_led(3);
+  //initiate the name prefix of different interest here
+  ndn_name_t schema_prefix;
+  ndn_name_t schema_prefix2;
+#ifdef BOARD_1
+  char schema_string[] = "/NDN-IoT/TrustChange/Board1/ControllerOnly";
+  char schema_string2[] = "/NDN-IoT/TrustChange/Board1/AllNode";
+#endif
+#ifdef BOARD_2
+  char schema_string[] = "/NDN-IoT/TrustChange/Board2/ControllerOnly";
+  char schema_string2[] = "/NDN-IoT/TrustChange/Board2/AllNode";
+#endif
+  ndn_name_from_string(&schema_prefix, schema_string, sizeof(schema_string));
+  ndn_name_from_string(&schema_prefix2, schema_string2, sizeof(schema_string2));
+
+  ndn_interest_t check_interest;
+  int result = ndn_interest_from_block(&check_interest, interest, interest_size);
+  printf("compare results of controller only: %d\n", ndn_name_compare(&schema_prefix, &check_interest.name));
+  printf("compare results of all nodes: %d\n", ndn_name_compare(&schema_prefix2, &check_interest.name));
+
+  if (ndn_name_compare(&check_interest.name, &schema_prefix)==0){
+    printf("Received an interest to change the board's trust policy to \"controller\" trust policy.\n");
+    schema_trust_flag = 0;
+    blink_led(4);
+  }
+
+  if (ndn_name_compare(&check_interest.name,&schema_prefix2)==0){
+    printf("Received an interest to change board's trust policy to \"all boards\" trust policy.\n");
+    schema_trust_flag = 1;
+    blink_led(4);
+  }
 }
 
 int on_led_cmd_interest(const uint8_t* interest, uint32_t interest_size, void *userdata)
 {
   printf("on_cmd_interest was triggered.\n");
+
+  //initiate the name prefix of different interest here
+  ndn_name_t led_cmd_prefix;
+#ifdef BOARD_1
+  char led_cmd_string[] = "/NDN-IoT/Board1/SD_LED/ON";
+#endif
+#ifdef BOARD_2
+  char led_cmd_string[] = "/NDN-IoT/Board2/SD_LED/ON";
+#endif
+  ndn_name_from_string(&led_cmd_prefix, led_cmd_string, sizeof(led_cmd_string));
+
+  ndn_interest_t check_interest;
+  int result = ndn_interest_from_block(&check_interest, interest, interest_size);
+
+  if (ndn_name_compare(&check_interest.name,&led_cmd_prefix) == 0){
+    printf("Received a command interest to turn on LED.\n");
+		
+    if (schema_trust_flag) {
+      blink_led(1);
+      printf("Finished blinking led 2.");
+    }	
+  }
+}
+
+void on_interest_timeout(void *userdata) {
+  APP_LOG("on_interest_timeout was triggered.\n");
+}
+
+void on_data(const uint8_t *data, uint32_t data_size, void *userdata) {
+  APP_LOG("on_data was triggered.\n");
 }
 
 // Callback for when sign on has completed.
@@ -101,31 +164,18 @@ void on_sign_on_completed(int result_code) {
     APP_LOG("Finished encoding the ndn interest.\n");
     APP_LOG_HEX("Encoded interest:", interest_encoder.output_value, interest_encoder.offset);
 
-    //  // Express the encoded interest for the certificate.
-    //  ndn_direct_face_express_interest(
-    //      &dummy_interest_name,
-    //      interest_encoder.output_value,
-    //      interest_encoder.offset,
-    //      m_on_data_callback,
-    //      m_interest_timeout_callback);
+    // Express the encoded interest for the certificate.
+    ndn_forwarder_express_interest(
+         interest_encoder.output_value,
+         interest_encoder.offset,
+         on_data,
+         on_interest_timeout,
+         NULL);
+
   } else {
     APP_LOG("Sign on failed, error code: %d\n", result_code);
   }
 }
-
-////timeout do nothing
-//int on_interest_timeout_callback(const uint8_t *interest, uint32_t interest_size) {
-//  (void)interest;
-//  (void)interest_size;
-//  blink_led(interest_size);
-//  return 0;
-//}
-//// data back do nothing
-//int on_data_callback(const uint8_t *data, uint32_t data_size) {
-//  (void)data;
-//  (void)data_size;
-//  return 0;
-//}
 
 /**@brief Function for application main entry.
  */
@@ -301,8 +351,7 @@ int main(void) {
   }
   APP_LOG("\n");
 
-//
-//  blink_led(3);
+  blink_led(3);
 //
 //  // Enter main loop.
 //  for (;;) {
