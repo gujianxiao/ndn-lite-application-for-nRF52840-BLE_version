@@ -24,11 +24,11 @@
   <ProjectSessionItem path="ndn_lite_nRF52840_example"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;adaptation"/>
-  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;adaptation;802154-adaptation"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;adaptation;alarm-adaptation"/>
-  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;adaptation;face"/>
   <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;Application"/>
-  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;nRF_802154"/>
+  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;Application;app-init-files"/>
+  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;nRF_Crypto"/>
+  <ProjectSessionItem path="ndn_lite_nRF52840_example;ndn_lite_nRF52840_example;nRF_Libraries"/>
  </Project>
  <Register1>
   <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="ndn_lite_nRF52840_example" decimalNodes="" octalNodes="" unsignedNodes=""/>
@@ -64,14 +64,33 @@
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="22" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/face/ndn-nrf-802154-face.h" selected="0" top="18" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="20" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/face/ndn-nrf-802154-face.c" selected="0" top="3" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="534" useTextEdit="1" useBinaryEdit="0" left="0" path="../../nRF-IEEE-802.15.4-radio-driver/src/platform/lp_timer/nrf_802154_lp_timer_nodrv.c" selected="0" top="522" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="422" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/alarm-adaptation/ndn-lite-alarm.c" selected="1" top="409" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="3" y="6" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/alarm-adaptation/ndn-lite-alarm.c" selected="0" top="37" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="93" useTextEdit="1" useBinaryEdit="0" left="0" path="../../nRF-IEEE-802.15.4-radio-driver/src/platform/clock/nrf_802154_clock_nodrv.c" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="327" useTextEdit="1" useBinaryEdit="0" left="0" path="../../nRF5_SDK_15.2.0_9412b96/modules/nrfx/drivers/src/nrfx_clock.c" selected="0" top="325" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="180" useTextEdit="1" useBinaryEdit="0" left="0" path="../../nRF-IEEE-802.15.4-radio-driver/src/nrf_802154_critical_section.c" selected="0" top="174" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="96" useTextEdit="1" useBinaryEdit="0" left="0" path="../../nRF-IEEE-802.15.4-radio-driver/src/platform/clock/nrf_802154_clock_sdk.c" selected="0" top="90" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/802154-adaptation/nrf-802154-driver.h" selected="0" top="20" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/alarm-adaptation/nrf-alarm-config.h" selected="0" top="14" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/alarm-adaptation/ndn-lite-alarm.h" selected="0" top="14" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/alarm-adaptation/nrf-alarm-config.h" selected="0" top="10" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="37" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/alarm-adaptation/ndn-lite-alarm.h" selected="0" top="25" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="27" useTextEdit="1" useBinaryEdit="0" left="0" path="../../ndn-lite/forwarder/pit.c" selected="0" top="7" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="37" y="8" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/uniform-time.c" selected="0" top="5" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="56" y="122" useTextEdit="1" useBinaryEdit="0" left="0" path="Application/main.c" selected="1" top="110" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="38" y="11" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/ndn-lite-over-nrf-sdk-init.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="27" y="61" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/ndn-lite-over-nrf-sdk-init.c" selected="0" top="40" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/ndn-nrf-802154-driver.h" selected="0" top="20" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="34" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/system.h" selected="0" top="18" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="35" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/system.c" selected="0" top="19" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="60" useTextEdit="1" useBinaryEdit="0" left="0" path="../../nRF-IEEE-802.15.4-radio-driver/src/nrf_802154_utils.h" selected="0" top="50" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/adaptation-error-code.h" selected="0" top="9" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="163" useTextEdit="1" useBinaryEdit="0" left="0" path="../../nRF5_SDK_15.2.0_9412b96/integration/nrfx/legacy/nrf_drv_clock.c" selected="0" top="145" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="149" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/app-support-adaptation/secure-sign-on-nrf-sdk-ble/sign-on-basic-client-nrf-sdk-ble.c" selected="0" top="137" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="220" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/ble-adaptation/nrf-sdk-ble-ndn-lite-ble-unicast-transport/nrf-sdk-ble-ndn-lite-ble-unicast-transport.c" selected="0" top="214" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="114" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/ble-adaptation/nrf-sdk-ble-stack/nrf-sdk-ble-stack.c" selected="0" top="75" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="99" useTextEdit="1" useBinaryEdit="0" left="0" path="../../nRF5_SDK_15.2.0_9412b96/components/libraries/util/app_error_weak.c" selected="0" top="97" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../../adaptation/adaptation-enums.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="64" useTextEdit="1" useBinaryEdit="0" left="0" path="../../nRF5_SDK_15.2.0_9412b96/components/libraries/crypto/nrf_crypto_init.c" selected="0" top="61" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="Application/nrf-sdk-led.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="28" useTextEdit="1" useBinaryEdit="0" left="0" path="Application/app-init-files/app_initialization_functions.h" selected="0" top="20" codecName="Default"/>
  </Files>
- <ARMCrossStudioWindow activeProject="ndn_lite_nRF52840_example" fileDialogDefaultFilter="" autoConnectTarget="J-Link" buildConfiguration="Debug" debugSearchFileMap="C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 4.12/source/thumb_crt0.s&#xa;&#xa;C:/Users/Rena Li/Desktop/nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/ses_startup_nrf52840.s&#xa;&#xa;C:/Users/Rena Li/Desktop/nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/ses_startup_nrf_common.s&#xa;" fileDialogInitialDirectory="C:/Users/Rena Li/Desktop/ndn-iot-package-over-nordic-sdk/nRF-IEEE-802.15.4-radio-driver/src/mac_features" debugSearchPath="" autoConnectCapabilities="3199"/>
+ <ARMCrossStudioWindow activeProject="ndn_lite_nRF52840_example" fileDialogDefaultFilter="" autoConnectTarget="J-Link" buildConfiguration="Debug" debugSearchFileMap="C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 4.12/source/thumb_crt0.s&#xa;&#xa;C:/Users/Rena Li/Desktop/nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/ses_startup_nrf52840.s&#xa;&#xa;C:/Users/Rena Li/Desktop/nRF5_SDK_15.2.0_9412b96/modules/nrfx/mdk/ses_startup_nrf_common.s&#xa;" fileDialogInitialDirectory="C:/Users/Rena Li/Desktop/ndn-iot-package-over-nordic-sdk/adaptation/alarm-adaptation" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>

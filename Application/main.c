@@ -107,27 +107,20 @@ void m_on_sign_on_completed_callback(int result_code) {
 //  return 0;
 //}
 
-APP_TIMER_DEF(m_ndn_lite_timer_id);
-
-/**@brief Timeout handler for the ndn lite timer
- */
-static void repeated_timer_handler(void * p_context)
-{
-    printf("The ndn lite timer reached its maximum count and reset.\n");
-}
-
 /**@brief Function for application main entry.
  */
 int main(void) {
 
   APP_LOG("Entered main function of main_board1.c\n");
 
+  APP_LOG("test 1\n");
+
   ndn_lite_over_nrf_sdk_startup();
 
   ret_code_t err_code;
 
   //initialize the button and LED
-  nrf_gpio_cfg_output(BSP_LED_0);                    //BSP_LED_0 is pin 13 in the nRF52840-DK. Configure pin 13 as standard output.
+  nrf_gpio_cfg_output(BSP_LED_0);                    // BSP_LED_0 is pin 13 in the nRF52840-DK. Configure pin 13 as standard output.
   nrf_gpio_cfg_input(BUTTON_1, NRF_GPIO_PIN_PULLUP); // Configure pin 11 as standard input with a pull up resister.
   nrf_gpio_cfg_input(BUTTON_2, NRF_GPIO_PIN_PULLUP); // Configure pin 12 as standard input with a pull up resister.
   nrf_gpio_cfg_input(BUTTON_3, NRF_GPIO_PIN_PULLUP); // Configure pin 12 as standard input with a pull up resister.
@@ -136,35 +129,30 @@ int main(void) {
   // Initialize the log.
   log_init();
 
-  // Initialize timers.
-  timers_init();
-
   // Initialize power management.
   power_management_init();
 
-  // Initialize the sign on client.
-  sign_on_basic_client_nrf_sdk_ble_construct(
-      SIGN_ON_BASIC_VARIANT_ECC_256,
-      DEVICE_IDENTIFIER, sizeof(DEVICE_IDENTIFIER),
-      DEVICE_CAPABILITIES, sizeof(DEVICE_CAPABILITIES),
-      SECURE_SIGN_ON_CODE,
-      BOOTSTRAP_ECC_PUBLIC_NO_POINT_IDENTIFIER, sizeof(BOOTSTRAP_ECC_PUBLIC_NO_POINT_IDENTIFIER),
-      BOOTSTRAP_ECC_PRIVATE, sizeof(BOOTSTRAP_ECC_PRIVATE),
-      m_on_sign_on_completed_callback);
+  printf("test 1 before delay\n");
 
-  err_code = app_timer_init();
-  APP_ERROR_CHECK(err_code);
-  err_code = app_timer_create(&m_ndn_lite_timer_id,
-                              APP_TIMER_MODE_REPEATED,
-                              repeated_timer_handler);
-  APP_ERROR_CHECK(err_code);
-  err_code = app_timer_start(m_ndn_lite_timer_id, 0xFFFFFFFF, NULL);
-  APP_ERROR_CHECK(err_code);
+  printf("Current time: %d\n", (int) ndn_time_now_ms());
 
-  for (int i = 0; i < 1000; i++) {
-    printf("inside init function: %d\n", app_timer_cnt_get());
-  }
-  printf("done\n");
+  ndn_time_delay(1000);
+
+  printf("test 1 after delay \n");
+
+  printf("Current time: %d\n", (int) ndn_time_now_ms());
+
+//  // Initialize the sign on client.
+//  sign_on_basic_client_nrf_sdk_ble_construct(
+//      SIGN_ON_BASIC_VARIANT_ECC_256,
+//      DEVICE_IDENTIFIER, sizeof(DEVICE_IDENTIFIER),
+//      DEVICE_CAPABILITIES, sizeof(DEVICE_CAPABILITIES),
+//      SECURE_SIGN_ON_CODE,
+//      BOOTSTRAP_ECC_PUBLIC_NO_POINT_IDENTIFIER, sizeof(BOOTSTRAP_ECC_PUBLIC_NO_POINT_IDENTIFIER),
+//      BOOTSTRAP_ECC_PRIVATE, sizeof(BOOTSTRAP_ECC_PRIVATE),
+//      m_on_sign_on_completed_callback);
+//
+//  APP_LOG("init done\n");
 
 //
 //  APP_LOG("Secure sign-on application successfully started.\n");
