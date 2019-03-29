@@ -197,6 +197,11 @@ int main(void) {
   }
 
   APP_LOG("Finished creating ble face and inserting it into FIB.\n");
+  APP_LOG("Route added for ble face, in order to send sign on interest to phone: ");
+  for (int i = 0; i < sign_on_interest_name.components_size; i++) {
+    APP_LOG("/%.*s", sign_on_interest_name.components[i].size, sign_on_interest_name.components[i].value);
+  }
+  APP_LOG("\n");
 
   // Register prefix to listen for interests to change trust policy
 #ifdef BOARD_1
@@ -227,6 +232,11 @@ int main(void) {
   }
 
   APP_LOG("Finished registering prefix for interests to change trust policy.\n");
+  APP_LOG("Prefix registered: ");
+  for (int i = 0; i < schema_prefix.components_size; i++) {
+    APP_LOG("/%.*s", schema_prefix.components[i].size, schema_prefix.components[i].value);
+  }
+  APP_LOG("\n");
 
   // Register prefix to listen for interests to turn on an LED
 #ifdef BOARD_1
@@ -256,6 +266,11 @@ int main(void) {
   }
 
   APP_LOG("Finished registering prefix for interests to turn on led.\n");
+  APP_LOG("Prefix registered: ");
+  for (int i = 0; i < led_cmd_prefix.components_size; i++) {
+    APP_LOG("/%.*s", led_cmd_prefix.components[i].size, led_cmd_prefix.components[i].value);
+  }
+  APP_LOG("\n");
 
   // Register route for sending interest to other boards
   char board_to_board_prefix_string[] = "/NDN-IoT";
@@ -279,7 +294,13 @@ int main(void) {
     return -1;
   }
 
-  APP_LOG("Finished adding route for board to send interests to other boards.\n");
+  APP_LOG("Finished adding route for board to send interests to other boards through ble face.\n");
+  APP_LOG("Route added: ");
+  for (int i = 0; i < board_to_board_prefix.components_size; i++) {
+    APP_LOG("/%.*s", board_to_board_prefix.components[i].size, board_to_board_prefix.components[i].value);
+  }
+  APP_LOG("\n");
+
 //
 //  blink_led(3);
 //
