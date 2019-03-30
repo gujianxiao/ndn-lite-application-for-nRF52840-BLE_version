@@ -15,8 +15,8 @@
 #include "../../ndn-lite/app-support/secure-sign-on/sign-on-basic-client-consts.h"
 #include "../../ndn-lite/app-support/secure-sign-on/variants/ecc_256/sign-on-basic-ecc-256-consts.h"
 
-//#define BOARD_1
-#define BOARD_2
+#define BOARD_1
+// #define BOARD_2
 
 #ifdef BOARD_1
 #define EXAMPLE_BOARD_NAME "board 1"

@@ -30,7 +30,7 @@
 #define ENCODER_BUFFER_SIZE 500
 
 // defines for ndn standalone library
-int schema_trust_flag = 0;
+int schema_trust_flag = 1;
 uint16_t m_face_id_ble = 3;
 ndn_nrf_ble_face_t *m_ndn_nrf_ble_face;
 ndn_encoder_t m_sign_on_interest_name_encoder;
@@ -398,10 +398,10 @@ int main(void) {
         APP_LOG("ndn_forwarder_express_interest failed, error code: %d\n", ret_val);
         return -1;
       }
+      APP_LOG("Size of interest being sent: %d\n", encoder.offset);
       ret_val = ndn_face_send(&m_ndn_nrf_ble_face->intf, encoder.output_value, encoder.offset);
       if (ret_val != NDN_SUCCESS) {
         APP_LOG("ndn_face_send failed, error code: %d\n", ret_val);
-        return -1;
       }
       ndn_time_delay(100); // for debouncing
     }
