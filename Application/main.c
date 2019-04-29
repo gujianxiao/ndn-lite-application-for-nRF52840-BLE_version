@@ -1,15 +1,17 @@
 
-#include "app-init-files/app_definitions.h"
-#include "app-init-files/app_initialization_functions.h"
-
-#include "print-helper.h"
-
 // includes for nrf sdk
 #include "nrf_crypto.h"
+#include "app-init/app_definitions.h"
+#include "app-init/app_initialization_functions.h"
+
+#include "util/print-helper.h"
+
+// includes for manipulating led's timers with nrf sdk
+#include "nrf-sdk-led/nrf-sdk-led.h"
 
 // includes for sign on client ble
 #include "../../adaptation/app-support-adaptation/secure-sign-on-nrf-sdk-ble/sign-on-basic-client-nrf-sdk-ble.h" // sign on basic client implemented with nrf sdk ble
-#include "sign-on-basic-credentials.h" // hardcoded credentials for the sign on basic client
+#include "ndn-sign-on/sign-on-basic-credentials.h" // hardcoded credentials for the sign on basic client
 
 // includes for adaptation between ndn-lite and nrf sdk
 #include "../../adaptation/ndn-lite-over-nrf-sdk-init.h"
@@ -24,10 +26,9 @@
 #include "../../ndn-lite/security/ndn-lite-sec-utils.h"
 #include "../../ndn-lite/util/uniform-time.h"
 
-// includes for manipulating led's timers with nrf sdk
-#include "nrf-sdk-led.h"
-
 #define ENCODER_BUFFER_SIZE 500
+
+int m_sign_on_completed = false;
 
 // defines for ndn standalone library
 int schema_trust_flag = 1;
@@ -41,70 +42,13 @@ ndn_encoder_t m_led_cmd_prefix_encoder;
 uint8_t m_led_cmd_prefix_encoded_buffer[ENCODER_BUFFER_SIZE];
 ndn_encoder_t m_board_to_board_prefix_encoder;
 uint8_t m_board_to_board_prefix_encoded_buffer[ENCODER_BUFFER_SIZE];
-
-int on_schema_interest(const uint8_t* interest, uint32_t interest_size, void *userdata)
-{
-  printf("on_schema_interest was triggered.\n");
-
-  blink_led(3);
-  //initiate the name prefix of different interest here
-  ndn_name_t schema_prefix;
-  ndn_name_t schema_prefix2;
-#ifdef BOARD_1
-  char schema_string[] = "/NDN-IoT/TrustChange/Board1/ControllerOnly";
-  char schema_string2[] = "/NDN-IoT/TrustChange/Board1/AllNode";
-#endif
-#ifdef BOARD_2
-  char schema_string[] = "/NDN-IoT/TrustChange/Board2/ControllerOnly";
-  char schema_string2[] = "/NDN-IoT/TrustChange/Board2/AllNode";
-#endif
-  ndn_name_from_string(&schema_prefix, schema_string, sizeof(schema_string));
-  ndn_name_from_string(&schema_prefix2, schema_string2, sizeof(schema_string2));
-
-  ndn_interest_t check_interest;
-  int result = ndn_interest_from_block(&check_interest, interest, interest_size);
-  printf("compare results of controller only: %d\n", ndn_name_compare(&schema_prefix, &check_interest.name));
-  printf("compare results of all nodes: %d\n", ndn_name_compare(&schema_prefix2, &check_interest.name));
-
-  if (ndn_name_compare(&check_interest.name, &schema_prefix)==0){
-    printf("Received an interest to change the board's trust policy to \"controller\" trust policy.\n");
-    schema_trust_flag = 0;
-    blink_led(4);
-  }
-
-  if (ndn_name_compare(&check_interest.name,&schema_prefix2)==0){
-    printf("Received an interest to change board's trust policy to \"all boards\" trust policy.\n");
-    schema_trust_flag = 1;
-    blink_led(4);
-  }
-}
-
-int on_led_cmd_interest(const uint8_t* interest, uint32_t interest_size, void *userdata)
-{
-  printf("on_cmd_interest was triggered.\n");
-
-  //initiate the name prefix of different interest here
-  ndn_name_t led_cmd_prefix;
-#ifdef BOARD_1
-  char led_cmd_string[] = "/NDN-IoT/Board1/SD_LED/ON";
-#endif
-#ifdef BOARD_2
-  char led_cmd_string[] = "/NDN-IoT/Board2/SD_LED/ON";
-#endif
-  ndn_name_from_string(&led_cmd_prefix, led_cmd_string, sizeof(led_cmd_string));
-
-  ndn_interest_t check_interest;
-  int result = ndn_interest_from_block(&check_interest, interest, interest_size);
-
-  if (ndn_name_compare(&check_interest.name,&led_cmd_prefix) == 0){
-    printf("Received a command interest to turn on LED.\n");
-		
-    if (schema_trust_flag) {
-      blink_led(1);
-      printf("Finished blinking led 2.");
-    }	
-  }
-}
+ndn_encoder_t m_other_device_certificates_prefix_encoder;
+uint8_t m_other_device_certificates_prefix_encoded_buffer[ENCODER_BUFFER_SIZE];
+ndn_encoder_t m_phone_interest_prefix_encoder; // encoder for the prefix we register with forwarder to get interest from phone
+uint8_t m_phone_interest_prefix_encoded_buffer[ENCODER_BUFFER_SIZE];
+ndn_encoder_t m_phone_interest_response_encoder; // encoder for the data packet we send in response to interest from phone
+uint8_t m_phone_interest_response_encoded_buffer[ENCODER_BUFFER_SIZE];
+ndn_interest_t m_phone_interest; // interest we get from phone
 
 void on_interest_timeout(void *userdata) {
   APP_LOG("on_interest_timeout was triggered.\n");
@@ -114,13 +58,63 @@ void on_data(const uint8_t *data, uint32_t data_size, void *userdata) {
   APP_LOG("on_data was triggered.\n");
 }
 
+int on_phone_interest(const uint8_t* interest, uint32_t interest_size, void *userdata) {
+  APP_LOG("on_phone_interest was triggered.\n");
+  APP_LOG_HEX("bytes of interest received from phone:", interest, interest_size);
+
+  int ret_val = -1;
+
+  ret_val = ndn_interest_from_block(&m_phone_interest, interest, interest_size);
+  if (ret_val != 0) {
+    APP_LOG("Error in on_phone_interest, ndn_interest_from_block, ret val: %d\n", ret_val);
+    return -1;
+  }
+
+  ndn_data_t phone_response_data;
+  ndn_data_init(&phone_response_data);
+
+  ret_val = ndn_name_init(&phone_response_data.name, m_phone_interest.name.components, m_phone_interest.name.components_size);
+  if (ret_val != 0) {
+    APP_LOG("Error in on_phone_interest, ndn_name_init, ret val: %d\n", ret_val);
+    return -1;
+  }
+  printf("Name of response data: "); ndn_name_print(&phone_response_data.name);
+  
+  uint8_t random_content[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  ret_val = ndn_data_set_content(&phone_response_data, random_content, sizeof(random_content));
+  if (ret_val != 0) {
+    APP_LOG("Error in on_phone_interest, ndn_data_set_content, ret val: %d\n", ret_val);
+    return -1;
+  }
+
+  encoder_init(&m_phone_interest_response_encoder, m_phone_interest_response_encoded_buffer,
+    sizeof(m_phone_interest_response_encoded_buffer));
+
+  ret_val = ndn_data_tlv_encode_digest_sign(&m_phone_interest_response_encoder, &phone_response_data);
+  if (ret_val != 0) {
+    APP_LOG("Error in on_phone_interest, ndn_data_tlv_encode_digest_sign, ret val: %d\n", ret_val);
+    return -1;
+  }
+
+  ret_val = ndn_forwarder_put_data(m_phone_interest_response_encoder.output_value, 
+                                   m_phone_interest_response_encoder.offset);
+  if (ret_val != 0) {
+    APP_LOG("Error in on_phone_interest, ndn_forwarder_put_data, ret val: %d\n", ret_val);
+    return -1;
+  }
+
+}
+
 // Callback for when sign on has completed.
 void on_sign_on_completed(int result_code) {
   APP_LOG("on_sign_on_completed was triggered.\n");
 
   if (result_code == NDN_SUCCESS) {
     APP_LOG("Sign on completed succesfully.\n");
-    blink_led(3);
+    m_sign_on_completed = true;
+
+    int ret_val = -1;
+
     APP_LOG("Value of KD pri after completing sign on:\n");
     for (int i = 0; i < get_sign_on_basic_client_nrf_sdk_ble_instance()->KD_pri_len; i++) {
       APP_LOG("%02x", get_sign_on_basic_client_nrf_sdk_ble_instance()->KD_pri_p[i]);
@@ -139,39 +133,6 @@ void on_sign_on_completed(int result_code) {
     }
     APP_LOG("\n");
 
-    // Create the name of the certificate to send an interest for.
-    ndn_name_t dummy_interest_name;
-    char dummy_interest_name_string[] = "/sign-on/cert/010101010101010101010101";
-    ndn_name_from_string(&dummy_interest_name, dummy_interest_name_string, strlen(dummy_interest_name_string));
-
-    // Create an interest, set its name to the certificate name.
-    ndn_interest_t dummy_interest;
-    ndn_interest_from_name(&dummy_interest, &dummy_interest_name);
-
-    APP_LOG("Finished initializing the dummy interest.\n");
-
-    // Initialize the interest encoder.
-    ndn_encoder_t interest_encoder;
-    uint32_t encoded_interest_max_size = 500;
-    uint8_t encoded_interest_buf[encoded_interest_max_size];
-    encoder_init(&interest_encoder, encoded_interest_buf, encoded_interest_max_size);
-
-    APP_LOG("Finished initializing the interest encoder.\n");
-
-    // TLV encode the interest.
-    ndn_interest_tlv_encode(&interest_encoder, &dummy_interest);
-
-    APP_LOG("Finished encoding the ndn interest.\n");
-    APP_LOG_HEX("Encoded interest:", interest_encoder.output_value, interest_encoder.offset);
-
-    // Express the encoded interest for the certificate.
-    ndn_forwarder_express_interest(
-         interest_encoder.output_value,
-         interest_encoder.offset,
-         on_data,
-         on_interest_timeout,
-         NULL);
-
   } else {
     APP_LOG("Sign on failed, error code: %d\n", result_code);
   }
@@ -186,13 +147,6 @@ int main(void) {
   ndn_lite_over_nrf_sdk_startup();
 
   int ret_val;
-
-  //initialize the button and LED
-  nrf_gpio_cfg_output(BSP_LED_0);                    // BSP_LED_0 is pin 13 in the nRF52840-DK. Configure pin 13 as standard output.
-  nrf_gpio_cfg_input(BUTTON_1, NRF_GPIO_PIN_PULLUP); // Configure pin 11 as standard input with a pull up resister.
-  nrf_gpio_cfg_input(BUTTON_2, NRF_GPIO_PIN_PULLUP); // Configure pin 12 as standard input with a pull up resister.
-  nrf_gpio_cfg_input(BUTTON_3, NRF_GPIO_PIN_PULLUP); // Configure pin 12 as standard input with a pull up resister.
-  nrf_gpio_pin_write(BSP_LED_0, 1);                  // Turn off LED1 (Active Low)
 
   // Initialize the log.
   log_init();
@@ -214,201 +168,64 @@ int main(void) {
     return -1;
   }
 
-  APP_LOG("Initialization of BLE example done.\n");
+  // Initialize the ndn lite forwarder
+  ndn_forwarder_init();
 
-  // Create the name for the sign-on interest / name of certificate that we will have after sign-on.
-  ndn_name_t sign_on_interest_name;
-  char sign_on_interest_name_string[] = "/sign-on/cert/010101010101010101010101";
-  ret_val = ndn_name_from_string(&sign_on_interest_name, sign_on_interest_name_string, strlen(sign_on_interest_name_string));
-  if (ret_val != NDN_SUCCESS) {
-    APP_LOG("ndn_name_from_string failed, error code: %d\n", ret_val);
-    return -1;
-  }
-
-  // Encode the sign-on interest name so it can be added to fib
-  encoder_init(&m_sign_on_interest_name_encoder, m_sign_on_interest_name_encoded_buffer,
-               sizeof(m_sign_on_interest_name_encoded_buffer));
-  ret_val = ndn_name_tlv_encode(&m_sign_on_interest_name_encoder, &sign_on_interest_name);
+  // Create name to allow device to send interest to phone for other device's certificates
+  ndn_name_t other_device_certificates_prefix;
+  char other_device_certificates_prefix_string[] = "/sign-on/cert";
+  ndn_name_from_string(&other_device_certificates_prefix, other_device_certificates_prefix_string, 
+    strlen(other_device_certificates_prefix_string));
+  // encode the prefix for other device's certificates so that it can be added as route to forwarder
+  encoder_init(&m_other_device_certificates_prefix_encoder, m_other_device_certificates_prefix_encoded_buffer,
+               sizeof(m_other_device_certificates_prefix_encoded_buffer));
+  ret_val = ndn_name_tlv_encode(&m_other_device_certificates_prefix_encoder, &other_device_certificates_prefix);
   if (ret_val != NDN_SUCCESS) {
     APP_LOG("ndn_name_tlv_encode failed, error code: %d\n", ret_val);
     return -1;
   }
 
-  // Create a ble face; the interest expressed will be sent through this face.
+  // Create a ble face; the interests expressed to phone for other device's certificates will be sent through this face.
   m_ndn_nrf_ble_face = ndn_nrf_ble_face_construct(m_face_id_ble);
   m_ndn_nrf_ble_face->intf.state = NDN_FACE_STATE_UP;
 
-  // Insert the ble face into the forwarding information base with the certificate's name,
+  // Insert the ble face into the forwarding information base with the certificate's name, 
   // so that the direct face's interest gets routed to this ble face
-  if ((ret_val = ndn_forwarder_add_route(&m_ndn_nrf_ble_face->intf, m_sign_on_interest_name_encoder.output_value, 
-                                     m_sign_on_interest_name_encoder.offset)) != 0) {
-    APP_LOG("Problem inserting fib entry, error code: %d\n", ret_val);
+  if ((ret_val = ndn_forwarder_add_route(&m_ndn_nrf_ble_face->intf, m_other_device_certificates_prefix_encoder.output_value,
+                                          m_other_device_certificates_prefix_encoder.offset)) != 0) {
+    printf("Problem inserting fib entry for ble face to phone, error code %d\n", ret_val);
     return -1;
   }
 
-  APP_LOG("Finished creating ble face and inserting it into FIB.\n");
-  APP_LOG("Route added for ble face, in order to send sign on interest to phone: ");
-  for (int i = 0; i < sign_on_interest_name.components_size; i++) {
-    APP_LOG("/%.*s", sign_on_interest_name.components[i].size, sign_on_interest_name.components[i].value);
-  }
-  APP_LOG("\n");
+  printf("Device bootstrapping: Finished creating ble face and inserting it into FIB.\n");
 
-  // Register prefix to listen for interests to change trust policy
-#ifdef BOARD_1
-  char schema_string[] = "/NDN-IoT/TrustChange/Board1";
-#endif
-#ifdef BOARD_2
-  char schema_string[] = "/NDN-IoT/TrustChange/Board2";
-#endif
-  ndn_name_t schema_prefix;
-  ret_val = ndn_name_from_string(&schema_prefix, schema_string, sizeof(schema_string));
+  // Register prefix to listen for interest from phone
+  char phone_test_interest_prefix_string[] = "/phone/test/interest";
+  ndn_name_t phone_test_interest_prefix;
+  ret_val = ndn_name_from_string(&phone_test_interest_prefix, phone_test_interest_prefix_string, 
+    sizeof(phone_test_interest_prefix_string));
   if (ret_val != NDN_SUCCESS) {
     APP_LOG("ndn_name_from_string failed, error code: %d\n", ret_val);
     return -1;
   }
-  // encode the schema prefix so that it can be registered with forwarder
-  encoder_init(&m_schema_prefix_encoder, m_schema_prefix_encoded_buffer,
-               sizeof(m_schema_prefix_encoded_buffer));
-  ret_val = ndn_name_tlv_encode(&m_schema_prefix_encoder, &schema_prefix);
+  // encode the phone interest prefix so that it can be registered with forwarder
+  encoder_init(&m_phone_interest_prefix_encoder, m_phone_interest_prefix_encoded_buffer,
+               sizeof(m_phone_interest_prefix_encoded_buffer));
+  ret_val = ndn_name_tlv_encode(&m_phone_interest_prefix_encoder, &phone_test_interest_prefix);
   if (ret_val != NDN_SUCCESS) {
     APP_LOG("ndn_name_tlv_encode failed, error code: %d\n", ret_val);
     return -1;
   }
-  ret_val = ndn_forwarder_register_prefix(m_schema_prefix_encoder.output_value, m_schema_prefix_encoder.offset,
-                                on_schema_interest, NULL);
+  ret_val = ndn_forwarder_register_prefix(m_phone_interest_prefix_encoder.output_value, m_phone_interest_prefix_encoder.offset,
+                                on_phone_interest, NULL);
   if (ret_val != NDN_SUCCESS) {
     APP_LOG("ndn_forwarder_register_prefix failed, error code: %d\n", ret_val);
     return -1;
   }
 
-  APP_LOG("Finished registering prefix for interests to change trust policy.\n");
-  APP_LOG("Prefix registered: ");
-  for (int i = 0; i < schema_prefix.components_size; i++) {
-    APP_LOG("/%.*s", schema_prefix.components[i].size, schema_prefix.components[i].value);
-  }
-  APP_LOG("\n");
-
-  // Register prefix to listen for interests to turn on an LED
-#ifdef BOARD_1
-  char led_cmd_string[] = "/NDN-IoT/Board1";
-#endif
-#ifdef BOARD_2
-  char led_cmd_string[] = "/NDN-IoT/Board2";
-#endif
-  ndn_name_t led_cmd_prefix;
-  ret_val = ndn_name_from_string(&led_cmd_prefix, led_cmd_string, sizeof(led_cmd_string));
-  if (ret_val != NDN_SUCCESS) {
-    APP_LOG("ndn_name_from_string failed, error code: %d\n", ret_val);
-    return -1;
-  }
-  encoder_init(&m_led_cmd_prefix_encoder, m_led_cmd_prefix_encoded_buffer,
-               sizeof(m_led_cmd_prefix_encoded_buffer));
-  ret_val = ndn_name_tlv_encode(&m_led_cmd_prefix_encoder, &led_cmd_prefix);
-  if (ret_val != NDN_SUCCESS) {
-    APP_LOG("ndn_name_tlv_encode failed, error code: %d\n", ret_val);
-    return -1;
-  }
-  ret_val = ndn_forwarder_register_prefix(m_led_cmd_prefix_encoder.output_value, m_led_cmd_prefix_encoder.offset,
-                                  on_led_cmd_interest, NULL);
-  if (ret_val != NDN_SUCCESS) {
-    APP_LOG("ndn_forwarder_register_prefix failed, error code: %d\n", ret_val);
-    return -1;
-  }
-
-  APP_LOG("Finished registering prefix for interests to turn on led.\n");
-  APP_LOG("Prefix registered: ");
-  for (int i = 0; i < led_cmd_prefix.components_size; i++) {
-    APP_LOG("/%.*s", led_cmd_prefix.components[i].size, led_cmd_prefix.components[i].value);
-  }
-  APP_LOG("\n");
-
-  // Register route for sending interest to other boards
-  char board_to_board_prefix_string[] = "/NDN-IoT";
-  ndn_name_t board_to_board_prefix;
-  ret_val = ndn_name_from_string(&board_to_board_prefix, board_to_board_prefix_string, 
-                       sizeof(board_to_board_prefix_string));
-  if (ret_val != NDN_SUCCESS) {
-    APP_LOG("ndn_name_from_string failed, error code: %d\n", ret_val);
-    return -1;
-  }
-  encoder_init(&m_board_to_board_prefix_encoder, m_board_to_board_prefix_encoded_buffer,
-               sizeof(m_board_to_board_prefix_encoded_buffer));
-  ret_val = ndn_name_tlv_encode(&m_board_to_board_prefix_encoder, &board_to_board_prefix);
-  if (ret_val != NDN_SUCCESS) {
-    APP_LOG("ndn_name_tlv_encode failed, error code: %d\n", ret_val);
-    return -1;
-  }
-  if ((ret_val = ndn_forwarder_add_route(&m_ndn_nrf_ble_face->intf, m_board_to_board_prefix_encoder.output_value, 
-                                     m_board_to_board_prefix_encoder.offset)) != 0) {
-    APP_LOG("Problem inserting fib entry, error code: %d\n", ret_val);
-    return -1;
-  }
-
-  APP_LOG("Finished adding route for board to send interests to other boards through ble face.\n");
-  APP_LOG("Route added: ");
-  for (int i = 0; i < board_to_board_prefix.components_size; i++) {
-    APP_LOG("/%.*s", board_to_board_prefix.components[i].size, board_to_board_prefix.components[i].value);
-  }
-  APP_LOG("\n");
-
-  blink_led(3);
+  printf("Device bootstrapping: Finished constructing the direct face.\n");
 
   // Enter main loop.
   for (;;) {
-    if (nrf_gpio_pin_read(BUTTON_1) == 0 && schema_trust_flag) { // If button 1 is pressed (Active Low)
-      nrf_gpio_pin_write(BSP_LED_0, 0);                         // Turn on LED
-      APP_LOG("Button 1 pressed. schematrust_flag is %d\n", schema_trust_flag);
-      ndn_time_delay(100); // for debouncing
-    }
-    if (nrf_gpio_pin_read(BUTTON_2) == 0) { // If button 2 is pressed (Active Low)
-      nrf_gpio_pin_write(BSP_LED_0, 1);     // Turn off LED
-      APP_LOG("Button 2 pressed.schematrust_flag is %d\n", schema_trust_flag);
-      ndn_time_delay(100); // for debouncing
-    }
-    if (nrf_gpio_pin_read(BUTTON_3) == 0) { // If button 2 is pressed (Active Low)
-      //send Interest here
-      APP_LOG("Button 3 pressed. start to send Interest of turn on LED\n");
-      //construct interest
-      ndn_interest_t interest;
-      ndn_interest_init(&interest);
-#ifdef BOARD_1
-      char name_string[] = "/NDN-IoT/Board2/SD_LED/ON";
-#endif
-#ifdef BOARD_2
-      char name_string[] = "/NDN-IoT/Board1/SD_LED/ON";
-#endif
-      ret_val = ndn_name_from_string(&interest.name, name_string, sizeof(name_string));
-      if (ret_val != NDN_SUCCESS) {
-        APP_LOG("ndn_name_from_string failed, error code: %d\n", ret_val);
-        return -1;
-      }
-      uint8_t interest_block[256] = {0};
-      ndn_encoder_t encoder;
-      encoder_init(&encoder, interest_block, 256);
-      ret_val = ndn_interest_tlv_encode(&encoder, &interest);
-      if (ret_val != NDN_SUCCESS) {
-        APP_LOG("ndn_interest_tlv_encode failed, error code: %d\n", ret_val);
-        return -1;
-      }
-      //send interest
-      ret_val = ndn_forwarder_express_interest(
-                  encoder.output_value, encoder.offset,
-                  on_data, on_interest_timeout, NULL);
-      if (ret_val != NDN_SUCCESS) {
-        APP_LOG("ndn_forwarder_express_interest failed, error code: %d\n", ret_val);
-        return -1;
-      }
-      APP_LOG("Size of interest being sent: %d\n", encoder.offset);
-      ret_val = ndn_face_send(&m_ndn_nrf_ble_face->intf, encoder.output_value, encoder.offset);
-      if (ret_val != NDN_SUCCESS) {
-        APP_LOG("ndn_face_send failed, error code: %d\n", ret_val);
-      }
-      ndn_time_delay(100); // for debouncing
-    }
-    // idle_state_handle();
   }
 }
-
-/**
- * @}
- */
