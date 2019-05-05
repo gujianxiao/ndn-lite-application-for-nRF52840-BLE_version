@@ -32,7 +32,6 @@ int m_sign_on_completed = false;
 
 // defines for ndn standalone library
 int schema_trust_flag = 1;
-uint16_t m_face_id_ble = 3;
 ndn_nrf_ble_face_t *m_ndn_nrf_ble_face;
 ndn_encoder_t m_sign_on_interest_name_encoder;
 uint8_t m_sign_on_interest_name_encoded_buffer[ENCODER_BUFFER_SIZE];
@@ -102,6 +101,8 @@ int on_phone_interest(const uint8_t* interest, uint32_t interest_size, void *use
     APP_LOG("Error in on_phone_interest, ndn_forwarder_put_data, ret val: %d\n", ret_val);
     return -1;
   }
+
+  APP_LOG("Reached the end of on_phone_interest without errors.\n");
 
 }
 
@@ -186,7 +187,7 @@ int main(void) {
   }
 
   // Create a ble face; the interests expressed to phone for other device's certificates will be sent through this face.
-  m_ndn_nrf_ble_face = ndn_nrf_ble_face_construct(m_face_id_ble);
+  m_ndn_nrf_ble_face = ndn_nrf_ble_face_construct();
   m_ndn_nrf_ble_face->intf.state = NDN_FACE_STATE_UP;
 
   // Insert the ble face into the forwarding information base with the certificate's name, 
