@@ -86,9 +86,6 @@ int on_phone_interest(const uint8_t* interest, uint32_t interest_size, void *use
     return -1;
   }
 
-  // give the data packet a metainfo tlv block so that it can be decoded by jndn library
-  ndn_metainfo_set_freshness_period(&phone_response_data.metainfo, 1000000);
-
   encoder_init(&m_phone_interest_response_encoder, m_phone_interest_response_encoded_buffer,
     sizeof(m_phone_interest_response_encoded_buffer));
 
